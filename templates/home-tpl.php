@@ -51,7 +51,7 @@ get_template_part('includes/header'); ?>
   <div class="row wedo">
   	<div class="container clearfix">
   		<?php while(have_rows('que_hacemos')): the_row(); 
-  				while(have_rows('items')): the_row(); 
+  				while(have_rows('item')): the_row(); 
   		?>
 	  		<div class="col-md-4">
 	  			<div class="item">
