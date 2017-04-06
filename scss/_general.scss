@@ -1,0 +1,38 @@
+//fonts
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+body,html{
+	font-family: 'PT Sans', sans-serif;
+}
+//mixins
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//Buttons
+.btn{
+	border-radius:0;
+	color:white;
+	&.blue{
+		background-color:$blue;
+	}
+}
+
+//No gutter
+.no-gutter{
+	>[class*='col-'] {
+    	padding-right:0;
+    	padding-left:0;
+	}
+} 
+
+
+//Post data fix
+.post-data.container{
+	padding:2em 0;
+	min-height: 600px;
+}

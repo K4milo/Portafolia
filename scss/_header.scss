@@ -1,0 +1,32 @@
+/*----------------------------------------
+HEADER
+----------------------------------------*/
+.navbar{
+	//Logo structure
+	.navbar-header{
+		.navbar-brand{
+			
+		}
+	}
+	//menu strcture
+	.navbar-collapse{
+		float: right;
+		ul.navbar-nav{
+			li{
+				a{
+					
+					&:hover,
+					&:focus{
+						background:transparent;
+					}
+				}
+			}
+		}
+	}
+}
+//Breadcrumbs
+.home{
+	.breadcrumbs{
+		display: none;
+	}	
+}

@@ -1,0 +1,25 @@
+/*----------------------------------------
+blog
+----------------------------------------*/
+.blog-page{
+	min-height:600px;
+	article{
+		margin: 1em 0;
+		overflow: hidden;
+		max-width: 70%;
+		figure{
+			float: left;
+			margin: .5em;
+			img{
+				display: block;
+				padding:.3em;
+				border: 1px solid #ccc;
+			}
+		}
+		p{
+			a{
+				display:none;
+			}
+		}
+	}
+}
