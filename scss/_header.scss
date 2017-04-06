@@ -2,16 +2,25 @@
 HEADER
 ----------------------------------------*/
 .navbar{
+	background: transparent;
+	border: none;
+	margin: 0;
 	//Logo structure
 	.navbar-header{
+		background: transparent;
+		border: none;
 		.navbar-brand{
-			
+			width: 296px;
+			height: 82px;
+			background-image: url('../img/logo.png');
+			text-indent: -99999px;
 		}
 	}
 	//menu strcture
 	.navbar-collapse{
 		float: right;
 		ul.navbar-nav{
+			background: transparent;
 			li{
 				a{
 					

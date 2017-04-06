@@ -2376,10 +2376,24 @@ body, html {
 /*----------------------------------------
 HEADER
 ----------------------------------------*/
-.navbar .navbar-collapse {
-  float: right; }
-  .navbar .navbar-collapse ul.navbar-nav li a:hover, .navbar .navbar-collapse ul.navbar-nav li a:focus {
-    background: transparent; }
+.navbar {
+  background: transparent;
+  border: none;
+  margin: 0; }
+  .navbar .navbar-header {
+    background: transparent;
+    border: none; }
+    .navbar .navbar-header .navbar-brand {
+      width: 296px;
+      height: 82px;
+      background-image: url("../img/logo.png");
+      text-indent: -99999px; }
+  .navbar .navbar-collapse {
+    float: right; }
+    .navbar .navbar-collapse ul.navbar-nav {
+      background: transparent; }
+      .navbar .navbar-collapse ul.navbar-nav li a:hover, .navbar .navbar-collapse ul.navbar-nav li a:focus {
+        background: transparent; }
 
 /*----------------------------------------
 HOME

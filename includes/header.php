@@ -37,34 +37,6 @@
                 'walker'            => new wp_bootstrap_navwalker())
             );
         ?>
-        <?php get_template_part('includes/navbar-search'); ?>
-        <?php
-            wp_nav_menu( array(
-                'theme_location'    => 'navbar-right',
-                'depth'             => 2,
-                'menu_class'        => 'nav navbar-nav navbar-right',
-                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                'walker'            => new wp_bootstrap_navwalker())
-            );
-        ?>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
-  
-<!--
-Site Title
-==========
-If you are displaying your site title in the "brand" link in the Bootstrap navbar, 
-then you probably don't require a site title. Alternatively you can use the example below. 
-See also the accompanying CSS example in css/bst.css .
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1 id="site-title">
-      	<a class="text-muted" href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
-      </h1>
-    </div>
-  </div>
-</div>
--->
