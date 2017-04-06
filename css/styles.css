@@ -5,7 +5,6 @@
  */
 /* FONT PATH
  * -------------------------- */
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -2329,14 +2328,42 @@
   overflow: visible;
   clip: auto; }
 
+@font-face {
+  font-family: 'Aileron';
+  src: url("../fonts/Aileron-Regular.eot");
+  src: url("../fonts/Aileron-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Aileron-Regular.woff") format("woff"), url("../fonts/Aileron-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Aileron Light';
+  src: url("../fonts/Aileron-Light.eot");
+  src: url("../fonts/Aileron-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Aileron-Light.woff") format("woff"), url("../fonts/Aileron-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Aileron Heavy';
+  src: url("../fonts/Aileron-Heavy.eot");
+  src: url("../fonts/Aileron-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Aileron-Heavy.woff") format("woff"), url("../fonts/Aileron-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Aileron Bold';
+  src: url("../fonts/Aileron-Bold.eot");
+  src: url("../fonts/Aileron-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Aileron-Bold.woff") format("woff"), url("../fonts/Aileron-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
 body, html {
-  font-family: 'PT Sans', sans-serif; }
+  font-family: "Aileron"; }
 
 .btn {
   border-radius: 0;
   color: white; }
   .btn.blue {
-    background-color: #009dce; }
+    background-color: #8BBEBC; }
 
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -2383,7 +2410,6 @@ blog
 Footer
 ----------------------------------------*/
 .site-footer {
-  background-color: #252728;
   margin: 0;
   width: 100%;
   padding: 1em;
