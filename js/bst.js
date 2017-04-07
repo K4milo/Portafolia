@@ -14,6 +14,8 @@
 		
 		// You can put your own code in here
 
+		new WOW().init();
+
 	});
 
 }(jQuery));

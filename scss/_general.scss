@@ -1,7 +1,35 @@
 body,html{
 	font-family: $aileron;
+
+	a{
+		&.blackBtn {
+			display: inline-block;
+			margin: 1em auto;
+			width: 170px;
+			padding: .3em;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			font-family: $aileronLt;
+			color: white;
+			background-color: black; 
+		}
+	}
 }
 //mixins
+
+@mixin blackBtn {
+  	a {
+  		display: inline-block;
+		margin: 1em auto;
+		width: 170px;
+		padding: .3em;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-family: $aileronLt;
+		color: white;
+		background-color: black;
+  	}
+}
 
 @mixin clearfix {
   &:after {
