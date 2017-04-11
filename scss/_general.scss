@@ -1,12 +1,13 @@
 body,html{
 	font-family: $aileron;
+	letter-spacing: 0.14em;
 
 	a{
 		&.blackBtn {
 			display: inline-block;
 			margin: 1em auto;
 			width: 170px;
-			padding: .3em;
+			padding: .3em; 
 			letter-spacing: 2px;
 			text-transform: uppercase;
 			font-family: $aileronLt;

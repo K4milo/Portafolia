@@ -14,7 +14,7 @@ get_template_part('includes/header'); ?>
   </div><!-- /.row -->
 
 
-  <div class="row studio wow fadeInUpBig" data-wow-duration="1s" data-wow-delay=".5s">
+  <div class="row studio wow fadeInDownBig" data-wow-duration="1s" data-wow-delay=".5s">
     <?php the_content(); ?>
   </div><!-- /.row -->
 

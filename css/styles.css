@@ -2357,7 +2357,8 @@
   font-style: normal; }
 
 body, html {
-  font-family: "Aileron"; }
+  font-family: "Aileron";
+  letter-spacing: 0.14em; }
   body a.blackBtn, html a.blackBtn {
     display: inline-block;
     margin: 1em auto;
@@ -2373,7 +2374,7 @@ body, html {
   border-radius: 0;
   color: white; }
   .btn.blue {
-    background-color: #8BBEBC; }
+    background-color: #00A19A; }
 
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -2426,11 +2427,11 @@ HOME
       .home .row.slider p:first-child strong {
         display: inline-block;
         margin: 0 0.2em;
-        background-color: #8BBEBC; }
+        background-color: #00A19A; }
     .home .row.slider p:nth-child(2) strong {
       display: inline-block;
       margin: 0 0.2em;
-      background-color: #BF3376; }
+      background-color: #E71D73; }
     .home .row.slider p:nth-child(3) strong {
       display: inline-block;
       margin: 0 0.2em;
@@ -2447,9 +2448,9 @@ HOME
     display: block;
     width: auto;
     margin: 1em auto;
-    background-color: #8BBEBC;
+    background-color: #00A19A;
     padding: 0.5em;
-    max-width: 200px; }
+    max-width: 220px; }
   .home .row.studio p {
     max-width: 800px;
     margin: 1em auto;
@@ -2512,7 +2513,7 @@ HOME
       padding: .3em;
       left: .2em;
       text-align: left;
-      background-color: #8BBEBC; }
+      background-color: #00A19A; }
     .home .row.wedo .item.item-2 figure, .home .row.wedo .item.item-4 figure {
       position: absolute;
       top: 2em;
@@ -2525,7 +2526,7 @@ HOME
       padding: .3em;
       right: .2em;
       text-align: left;
-      background-color: #BF3376; }
+      background-color: #E71D73; }
 
 /*----------------------------------------
 About
