@@ -16,6 +16,18 @@
 
 		new WOW().init();
 
+		$(window).load(function() {
+			$('.row.slider > strong').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 400);
+		});
+
+		//read more
+		$('.blackBtn').click(function(event) {
+			/* Act on the event */
+			event.preventDefault();
+			$('.long-text').toggle(400);
+			$(this).fadeOut(500);
+		});
+
 	});
 
 }(jQuery));

@@ -2369,6 +2369,8 @@ body, html {
     font-family: "Aileron Light";
     color: white;
     background-color: black; }
+  body strong, html strong {
+    display: inline-block; }
 
 .btn {
   border-radius: 0;
@@ -2469,7 +2471,7 @@ HOME
     margin: 1.4em auto 0;
     font-size: 2em;
     padding: .3em;
-    max-width: 438px; }
+    max-width: 500px; }
   .home .row.values header h3 {
     margin-top: .3em;
     max-width: 350px; }
@@ -2505,6 +2507,8 @@ HOME
       position: absolute;
       top: 2em;
       right: 2em; }
+      .home .row.wedo .item.item-1 figure img, .home .row.wedo .item.item-3 figure img {
+        display: block; }
     .home .row.wedo .item.item-1 .titulo, .home .row.wedo .item.item-3 .titulo {
       font-family: "Aileron Bold";
       display: block;
@@ -2522,7 +2526,8 @@ HOME
       font-family: "Aileron Bold";
       display: block;
       position: absolute;
-      top: 1em;
+      top: 0;
+      max-width: 69%;
       padding: .3em;
       right: .2em;
       text-align: left;
@@ -2531,6 +2536,127 @@ HOME
 /*----------------------------------------
 About
 ----------------------------------------*/
+.page-template-about-tpl {
+  text-align: center;
+  font-size: 120%; }
+  .page-template-about-tpl .content {
+    background-color: #F7F7F8;
+    padding: 3em 0;
+    line-height: 1.6; }
+    .page-template-about-tpl .content header h2, .page-template-about-tpl .content header h3 {
+      display: block;
+      color: white;
+      background-color: black;
+      text-align: center;
+      margin: 1em auto;
+      font-size: 2.5em;
+      padding: .3em;
+      max-width: 220px; }
+    .page-template-about-tpl .content header p {
+      max-width: 600px;
+      margin: 1em auto;
+      font-size: 2em; }
+  .page-template-about-tpl .profile {
+    padding: 3em 0; }
+    .page-template-about-tpl .profile figure {
+      width: 80px;
+      height: 80px;
+      overflow: hidden;
+      margin: 1em auto;
+      border-radius: 100%; }
+      .page-template-about-tpl .profile figure img {
+        width: 100%;
+        height: auto; }
+    .page-template-about-tpl .profile ul.social {
+      padding: 0;
+      text-align: center; }
+      .page-template-about-tpl .profile ul.social li {
+        display: inline-block;
+        list-style: none;
+        margin: .4em; }
+        .page-template-about-tpl .profile ul.social li a:hover {
+          opacity: .7; }
+    .page-template-about-tpl .profile .long-text p,
+    .page-template-about-tpl .profile .short-text p {
+      max-width: 600px;
+      margin: 1em auto;
+      font-size: 2em; }
+    .page-template-about-tpl .profile .long-text .blackBtn,
+    .page-template-about-tpl .profile .short-text .blackBtn {
+      text-align: center;
+      margin: 1em auto;
+      display: block; }
+    .page-template-about-tpl .profile .long-text {
+      display: none; }
+
+.page-template-wesay {
+  text-align: center;
+  font-size: 120%; }
+  .page-template-wesay .content {
+    background-color: #F7F7F8;
+    padding: 3em 0;
+    line-height: 1.6; }
+    .page-template-wesay .content header img {
+      max-width: 100%;
+      margin: 1em auto;
+      display: block; }
+    .page-template-wesay .content header h2, .page-template-wesay .content header h3 {
+      display: block;
+      color: white;
+      background-color: black;
+      text-align: center;
+      margin: 1em auto;
+      font-size: 2.5em;
+      padding: .3em;
+      max-width: 180px; }
+    .page-template-wesay .content header p {
+      max-width: 600px;
+      margin: 1em auto;
+      font-size: 2em; }
+  .page-template-wesay .second-blog {
+    padding: 3em 0; }
+    .page-template-wesay .second-blog .featured .last-posts {
+      background-color: white;
+      border: 1px solid #F2F2F2;
+      min-height: 550px; }
+      .page-template-wesay .second-blog .featured .last-posts figure {
+        max-height: 220px;
+        overflow: hidden; }
+        .page-template-wesay .second-blog .featured .last-posts figure img {
+          width: 100%;
+          height: auto; }
+      .page-template-wesay .second-blog .featured .last-posts .caption {
+        padding: 0 1em; }
+        .page-template-wesay .second-blog .featured .last-posts .caption header h3 {
+          text-align: left;
+          color: black;
+          font-weight: bold;
+          font-size: 2.5em; }
+        .page-template-wesay .second-blog .featured .last-posts .caption p {
+          text-align: left;
+          font-size: 1.5em; }
+    .page-template-wesay .second-blog .other .last-posts {
+      background-color: white;
+      border: 1px solid #F2F2F2;
+      min-height: 350px;
+      margin-top: 2em; }
+      .page-template-wesay .second-blog .other .last-posts figure {
+        max-height: 140px;
+        overflow: hidden; }
+        .page-template-wesay .second-blog .other .last-posts figure img {
+          width: 100%;
+          height: auto; }
+      .page-template-wesay .second-blog .other .last-posts .caption {
+        padding: 0 1em; }
+        .page-template-wesay .second-blog .other .last-posts .caption header h3 {
+          text-align: left;
+          color: black;
+          font-weight: bold;
+          font-size: 2em; }
+        .page-template-wesay .second-blog .other .last-posts .caption p {
+          text-align: left;
+          font-size: 1.5em; }
+
 /*----------------------------------------
 blog
 ----------------------------------------*/
@@ -2555,13 +2681,27 @@ Footer
 ----------------------------------------*/
 .site-footer {
   margin: 0;
-  width: 100%;
-  padding: 1em;
   text-align: center;
-  clear: both; }
-  .site-footer p {
-    margin: 0;
+  padding: 1em;
+  width: 100%;
+  background-color: #D8D9DD; }
+  .site-footer .footer-nav ul {
+    width: 100%;
     padding: 0; }
-  .site-footer a {
-    text-align: center;
-    color: #ffffff; }
+    .site-footer .footer-nav ul li {
+      display: inline-block;
+      float: none; }
+      .site-footer .footer-nav ul li a {
+        padding: .2em 1em;
+        color: black;
+        font-size: 1.2em;
+        font-weight: bold;
+        border-right: 1px solid; }
+  .site-footer .terms {
+    color: black;
+    font-size: 1.4em;
+    font-weight: bold; }
+  .site-footer .site-sub-footer {
+    max-width: 1024px;
+    margin: 1em auto;
+    font-size: 1.2em; }
