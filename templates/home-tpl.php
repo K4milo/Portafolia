@@ -79,6 +79,9 @@ get_template_part('includes/header'); ?>
 
   <div class="row testimonios">
     <div class="container clearfix">
+      <h3 class="titulo wow  fadeIn">
+        What They Say
+      </h3>
       <ul>
         <?php 
             while(have_rows('testimonios')): the_row(); 
