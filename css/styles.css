@@ -2405,8 +2405,11 @@ HEADER
     float: right; }
     .navbar .navbar-collapse ul.navbar-nav {
       background: transparent; }
-      .navbar .navbar-collapse ul.navbar-nav li a:hover, .navbar .navbar-collapse ul.navbar-nav li a:focus {
-        background: transparent; }
+      .navbar .navbar-collapse ul.navbar-nav li a {
+        font-size: 1.6em;
+        font-weight: bold; }
+        .navbar .navbar-collapse ul.navbar-nav li a:hover, .navbar .navbar-collapse ul.navbar-nav li a:focus {
+          background: transparent; }
 
 /*----------------------------------------
 HOME
@@ -2656,6 +2659,117 @@ About
         .page-template-wesay .second-blog .other .last-posts .caption p {
           text-align: left;
           font-size: 1.5em; }
+
+.page-template-wedo {
+  font-size: 120%; }
+  .page-template-wedo .list-bs-items {
+    /* flip the pane when hovered */
+    /* flip speed goes here */
+    /* hide back of pane during swap */
+    /* front pane, placed above back */
+    /* back, initially hidden pane */ }
+    .page-template-wedo .list-bs-items header h2 {
+      text-align: center;
+      background-color: #00A19A;
+      font-size: 3em;
+      max-width: 260px;
+      margin: 2em auto;
+      padding: .3em; }
+    .page-template-wedo .list-bs-items .flip-container {
+      perspective: 1000px; }
+    .page-template-wedo .list-bs-items .flip-container:hover .flipper, .page-template-wedo .list-bs-items .flip-container.hover .flipper {
+      transform: rotateY(180deg); }
+    .page-template-wedo .list-bs-items .flip-container, .page-template-wedo .list-bs-items .front, .page-template-wedo .list-bs-items .back {
+      width: 100%;
+      height: 320px; }
+    .page-template-wedo .list-bs-items .flipper {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative; }
+    .page-template-wedo .list-bs-items .front, .page-template-wedo .list-bs-items .back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .page-template-wedo .list-bs-items .front {
+      z-index: 2;
+      /* for firefox 31 */
+      transform: rotateY(0deg); }
+    .page-template-wedo .list-bs-items .back {
+      transform: rotateY(180deg); }
+    .page-template-wedo .list-bs-items .service-square {
+      text-align: center; }
+      .page-template-wedo .list-bs-items .service-square .front h4 {
+        font-weight: bold;
+        font-size: 2.4em;
+        padding: 2.5em 1em; }
+      .page-template-wedo .list-bs-items .service-square .back {
+        font-size: 2em;
+        padding: 2.5em 1em; }
+      .page-template-wedo .list-bs-items .service-square:nth-child(odd) {
+        background-color: #F2F2F2; }
+  .page-template-wedo .methodology {
+    min-height: 300px;
+    background-image: url("../img/bg_banner.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 3em 0 4em; }
+    .page-template-wedo .methodology header h2, .page-template-wedo .methodology header h3 {
+      display: block;
+      color: white;
+      background-color: black;
+      text-align: center;
+      margin: 1.4em auto 0;
+      font-size: 2em;
+      padding: .3em;
+      max-width: 500px; }
+    .page-template-wedo .methodology header h3 {
+      margin-top: .3em;
+      max-width: 350px; }
+    .page-template-wedo .methodology p {
+      font-size: 1.6em;
+      background-color: #000000;
+      color: #ffffff;
+      margin: 1em 0;
+      max-width: 266px; }
+    .page-template-wedo .methodology ul {
+      padding: 0; }
+      .page-template-wedo .methodology ul li {
+        display: block;
+        padding: 1em;
+        background-color: #C2C3C9;
+        border: 3px solid #ffffff;
+        border-right: none;
+        position: relative;
+        width: 20%;
+        float: left;
+        margin: 0 -2px;
+        padding: 1.3em 0 1.3em 4em;
+        font-weight: bolder;
+        font-size: 1.3em;
+        min-height: 63px; }
+        .page-template-wedo .methodology ul li::after {
+          content: "";
+          display: block;
+          width: 26px;
+          height: 63px;
+          position: absolute;
+          right: -13px;
+          top: 0;
+          background-image: url("../img/arrow-path.png");
+          background-color: #C2C3C9;
+          z-index: 2; }
+        .page-template-wedo .methodology ul li:last-child:after {
+          display: none; }
+  .page-template-wedo .faqs header h3 {
+    text-align: center;
+    background-color: #E71D73;
+    font-size: 3em;
+    max-width: 260px;
+    margin: 2em auto;
+    padding: .3em; }
 
 /*----------------------------------------
 blog

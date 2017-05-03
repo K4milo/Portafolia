@@ -77,6 +77,20 @@ get_template_part('includes/header'); ?>
   	</div>
   </div><!-- /.row -->
 
+  <div class="row testimonios">
+    <div class="container clearfix">
+      <ul>
+        <?php 
+            while(have_rows('testimonios')): the_row(); 
+        ?>
+          <li><img src="<?php the_sub_field('icono'); ?>"></li>
+        <?php 
+          endwhile; 
+        ?>
+      </ul>
+    </div>
+  </div><!-- /.row -->
+
 </div><!-- /.container -->
 
 <?php endwhile; ?>
