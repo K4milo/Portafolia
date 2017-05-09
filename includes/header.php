@@ -40,3 +40,9 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
+
+<ul class="social-bs">
+  <li><a href="https://www.facebook.com/portafolia.studio/" target="_blank">Facebook</a></li>
+  <li><a href="https://www.instagram.com/portafolia_studio/" target="_blank">Instagram</a></li>
+  <li><a href="https://twitter.com/portafolia" target="_blank">Twitter</a></li>
+</ul>

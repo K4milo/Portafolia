@@ -23,6 +23,8 @@ HOME
 						display: inline-block;
 						margin: 0 0.2em;
 						background-color: $blue;
+						opacity: 0;
+						transition: all 0.8s ease-in;
 					}
 				}
 				&:nth-child(2) { 
@@ -30,6 +32,8 @@ HOME
 						display: inline-block;
 						margin: 0 0.2em;
 						background-color: $purple;
+						opacity: 0;
+						transition: all 0.8s ease-in;
 					}
 				}
 				&:nth-child(3) {
@@ -38,8 +42,20 @@ HOME
 						margin: 0 0.2em;
 						background-color: black;
 						color: white; 
+						opacity: 0;
+						transition: all 0.8s ease-in;
 					}
 				}
+			}
+
+			.bottom-slider {
+				position: absolute;
+				bottom: 3em;
+				width: 122px;
+				text-align: center;
+				left: 47%;
+				font-weight: bold;
+				color: black;
 			}
 		}
 		//---------- studio
@@ -90,7 +106,6 @@ HOME
 			//items
 			.item{
 				text-align: center;
-				font-size: 120%;
 				margin: 3em 0;
 				padding: 0 2em;
 				figure{
@@ -188,6 +203,33 @@ HOME
 			li {
 				display: inline-block;
 				margin: 1em 2em 3em; 
+			}
+		}
+	}
+}
+
+
+.newsletter{
+	padding: 1em 0;
+	text-align: center;
+	width: 100%;
+	h4{
+		font-weight: bold;
+	}
+	form{
+		input {
+			&.form-control{
+				width: 34%;
+				display: inline-block;
+				float: none;
+				padding: 1em;
+				background-color: white;
+			}
+			&.btn-primary {
+				background-color: $black;
+				display: inline-block;
+				margin: 1em;
+				float: none;
 			}
 		}
 	}

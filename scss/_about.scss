@@ -3,7 +3,6 @@ About
 ----------------------------------------*/
 .page-template-about-tpl {
 	text-align: center;
-	font-size: 120%;
 	.content {
 		background-color: $ltGrey;
 		padding: 3em 0;
@@ -17,13 +16,13 @@ About
 				margin: 1em auto;
 				font-size: 2.5em;
 				padding: .3em;
-				max-width: 220px;
+				max-width: 230px;
 			}
 
 			p {
-				max-width: 600px;
+				max-width: 800px;
 				margin: 1em auto;
-				font-size: 2em;
+				font-size: 1.4em;
 			}
 		}
 	}
@@ -62,9 +61,9 @@ About
 		.long-text,
 		.short-text {
 			p {
-				max-width: 600px;
+				max-width: 800px;
 				margin: 1em auto;
-				font-size: 2em;
+				font-size: 1.4em;
 			}
 			.blackBtn{
 				text-align: center;
@@ -84,7 +83,6 @@ About
 
 .page-template-wesay{
 	text-align: center;
-	font-size: 120%;
 	.content {
 		background-color: $ltGrey;
 		padding: 3em 0;
@@ -104,12 +102,15 @@ About
 				font-size: 2.5em;
 				padding: .3em;
 				max-width: 180px;
+				span{
+					font-size: 22px;
+				}
 			}
 
 			p {
-				max-width: 600px;
+				max-width: 800px;
 				margin: 1em auto;
-				font-size: 2em;
+				font-size: 1.4em;
 			}
 		}
 	}
@@ -186,13 +187,12 @@ About
 
 //what we do page
 .page-template-wedo {
-	font-size: 120%;
 	.list-bs-items {
 		header{
 			h2{
 				text-align: center;
 				background-color: $blue;
-				font-size: 3em;
+				font-size: 2em;
 				max-width: 260px;
 				margin: 2em auto;
 				padding: .3em;
@@ -309,9 +309,9 @@ About
 				width: 20%;
 				float: left;
 				margin: 0 -2px;
-				padding: 1.3em 0 1.3em 4em;
+				padding: 1.3em 0 1.67em 4em;
 				font-weight: bolder;
-				font-size: 1.3em;
+				font-size: 1em;
 				min-height: 63px;
 				&::after{
 					content:"";
@@ -337,6 +337,12 @@ About
 
 	//faqs
 	.faqs {
+		padding: 3em 0;
+		background-image: url('../img/bg_banner.png');
+		background-size: cover;
+		background-position: center right;
+		background-repeat: no-repeat;
+
 		header{
 			h3{
 				text-align: center;
@@ -347,5 +353,70 @@ About
 				padding: .3em;
 			}
 		}
+
+		.panel-group{
+			max-width: 600px;
+			.panel-default {
+				border: none;
+				.panel-heading {
+					background-color: $grey;
+					margin-bottom: .3em;
+					position: relative;
+					img {
+						position: absolute;
+						right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+//Contact page
+.page-id-121 {
+	header{
+		max-width: 400px;
+		text-align: center;
+		margin: 0 auto;
+		h2,h3{
+			display: inline-block;
+			background-color: $black;
+			color: $white;
+			text-align: center;
+			margin: 5px;
+			font-size: 2em;
+			padding: .4em;
+		}
+	}
+
+	form{
+		padding: 2em 0;
+		br{
+			display: none;
+		}
+		label{
+			font-weight: bold;
+			margin-top: 2em;
+		}
+		.form-control {
+			width: 50%;
+			background-color: $grey;
+			padding: 2em;
+		}
+		textarea.form-control{
+			width: 62%;
+		}
+
+		.btn-primary {
+			float: right;
+			margin-right: 38%;
+			border-radius: 0;
+			padding: .3em 3em;
+			color: $white;
+			background-color: $black;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+		}
+
 	}
 }

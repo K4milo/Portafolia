@@ -63,6 +63,7 @@ get_template_part('includes/header'); ?>
           <div class="panel-heading">
             <h4 class="panel-title">
               <a data-toggle="collapse" href="#collapse<?php echo $counter; ?>"><?php the_sub_field('enunciado'); ?></a>
+              <img src="<?php bloginfo('template_url'); ?>/img/caret-down.png" class="caretd">
             </h4>
           </div>
           <div id="collapse<?php echo $counter; ?>" class="panel-collapse collapse">

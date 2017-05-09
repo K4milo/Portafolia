@@ -11,10 +11,11 @@ get_template_part('includes/header'); ?>
 
   <div class="row slider">
     <?php the_field('texto_slider'); ?>
+    <a href="#studio" class="bottom-slider">Learn More <img src="<?php bloginfo('template_url'); ?>/img/caret-down.png" class="caretd"></a>
   </div><!-- /.row -->
 
 
-  <div class="row studio wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">
+  <div class="row studio wow fadeInUp" id="studio" data-wow-duration="1s" data-wow-delay="1.5s">
     <?php the_content(); ?>
   </div><!-- /.row -->
 
@@ -95,6 +96,12 @@ get_template_part('includes/header'); ?>
   </div><!-- /.row -->
 
 </div><!-- /.container -->
+
+<div class="row newsletter">
+  <div class="container">
+    <?php echo do_shortcode('[contact-form-7 id="164" title="Form inglés"]'); ?>
+  </div>
+</div>
 
 <?php endwhile; ?>
 

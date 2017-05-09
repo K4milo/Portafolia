@@ -1,10 +1,36 @@
 /*----------------------------------------
 HEADER
 ----------------------------------------*/
+.social-bs{
+	position: absolute;
+	z-index: 20;
+	top: 50%;
+	right: -134px;
+    transform: rotate(-90deg);
+	li{
+		display: inline-block;
+		a {
+			color: $black;
+			font-weight: bold;
+			padding: 0.5em 1em;
+			border-right: 1px solid;
+		}
+		&:last-child{
+			a {
+				border-right: none;
+			}
+		}
+	}
+}
+
 .navbar{
-	background: transparent;
+	background: white;
 	border: none;
 	margin: 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
 	//Logo structure
 	.navbar-header{
 		background: transparent;
@@ -23,11 +49,43 @@ HEADER
 			background: transparent;
 			li{
 				a{
-					font-size: 1.6em;
-					font-weight: bold;	
+					font-size: 1em;
+					font-weight: bold;
+					position: relative;
+					&::after{
+						content:"";
+						width: 2px;
+						height: 20px;
+						display: block;
+						background: $black;
+						position: absolute;
+						top: 15px;
+						right: 0;
+					}
+
 					&:hover,
 					&:focus{
 						background:transparent;
+					}
+				}
+
+				&:last-child {
+					a {
+						width: 27px;
+						height: 17px;
+						background-image: url('../img/mail-icon.png');
+						text-indent: -9999px;
+						padding: 0;
+						margin: 16px 10px 0;
+						&::after {
+							display: none;
+						}
+					}
+				}
+
+				&.active {
+					a {
+						background-color: transparent;
 					}
 				}
 			}

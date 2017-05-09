@@ -1,7 +1,7 @@
 body,html{
 	font-family: $aileron;
 	letter-spacing: 0.14em;
-
+	margin-top: 70px;
 	a{
 		&.blackBtn {
 			display: inline-block;
@@ -18,6 +18,16 @@ body,html{
 
 	strong {
 		display: inline-block; 
+	}
+
+	//for terms
+	&.page-id-165{
+		h3{
+			display: inline-block;
+			background: black;
+			color: white;
+			padding: .3em;
+		}
 	}
 }
 //mixins
