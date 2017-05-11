@@ -28,6 +28,10 @@
 			$(this).fadeOut(500);
 		});
 
+		$('.page-template-wesay .content header h2').click(function(event) {
+			$('.page-template-wesay .content p').fadeIn(300);
+		});
+
 		//Hashes scroll
 		$('a[href*="#"]')
 		  // Remove links that don't actually link to anything

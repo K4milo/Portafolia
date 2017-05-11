@@ -2,6 +2,32 @@ body,html{
 	font-family: $aileron;
 	letter-spacing: 0.14em;
 	margin-top: 70px;
+
+	//blog single
+	.blog-single{
+		max-width: 600px;
+		margin: 0 auto;
+		padding: 2em 0;
+		img{
+			max-width: 100%;
+			height: auto;
+			margin: 2em auto;
+		}
+		
+		header {
+			h2 {
+				display: inline-block;
+				background-color: black;
+				color: white;
+				padding: .3em;
+			}
+		}
+
+		p{
+			margin-bottom: 2em;
+		}
+	}
+
 	a{
 		&.blackBtn {
 			display: inline-block;

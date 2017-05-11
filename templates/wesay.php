@@ -37,6 +37,10 @@ get_template_part('includes/header'); ?>
         ?>
         <div class="col-md-6">
             <article class="last-posts" id="post_<?php the_ID()?>">
+              <header>
+                <img src="<?php bloginfo('template_url');?>/img/logo-blog.png" alt="portafuck">
+                <div class="date"><?php the_time('F j, Y'); ?></div>
+              </header>
               <figure class="thumbs">
                 <?php the_post_thumbnail('full'); ?>
               </figure>
@@ -71,6 +75,10 @@ get_template_part('includes/header'); ?>
         ?>
         <div class="col-md-4">
           <article class="last-posts" id="post_<?php the_ID()?>">
+            <header>
+              <img src="<?php bloginfo('template_url');?>/img/logo-blog.png" alt="portafuck">
+              <div class="date"><?php the_time('F j, Y'); ?></div>
+            </header>
             <figure class="thumbs">
               <?php the_post_thumbnail('thumbnail'); ?>
             </figure>

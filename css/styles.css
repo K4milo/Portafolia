@@ -2360,6 +2360,21 @@ body, html {
   font-family: "Aileron";
   letter-spacing: 0.14em;
   margin-top: 70px; }
+  body .blog-single, html .blog-single {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em 0; }
+    body .blog-single img, html .blog-single img {
+      max-width: 100%;
+      height: auto;
+      margin: 2em auto; }
+    body .blog-single header h2, html .blog-single header h2 {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      padding: .3em; }
+    body .blog-single p, html .blog-single p {
+      margin-bottom: 2em; }
   body a.blackBtn, html a.blackBtn {
     display: inline-block;
     margin: 1em auto;
@@ -2707,6 +2722,7 @@ About
       .page-template-wesay .content header h2 span, .page-template-wesay .content header h3 span {
         font-size: 22px; }
     .page-template-wesay .content header p {
+      display: none;
       max-width: 800px;
       margin: 1em auto;
       font-size: 1.4em; }
