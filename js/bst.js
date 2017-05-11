@@ -32,6 +32,10 @@
 			$('.page-template-wesay .content p').fadeIn(300);
 		});
 
+		$('.share-feed').click(function(event) {
+			$(this).find('.share-prompt').toggle(500);
+		});
+
 		//Hashes scroll
 		$('a[href*="#"]')
 		  // Remove links that don't actually link to anything

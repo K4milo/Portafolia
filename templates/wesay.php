@@ -50,8 +50,18 @@ get_template_part('includes/header'); ?>
                     <h3><?php the_title(); ?></h3>
                   </a>
                 </header>
-                <?php the_excerpt(); ?>
-                <a href="<?php the_permalink(); ?>" class="link-info">Ver Más</a>
+                <?php the_excerpt(); ?>                
+              </div>
+              <div class="foot">
+                <ul>
+                  <li><i class="fa fa-external-link" aria-hidden="true"></i>
+                    <a href="<?php the_permalink(); ?>">View More</a>
+                  </li>
+                  <li class="share-feed">
+                    <i class="fa fa-share" aria-hidden="true"></i>Share</a> 
+                    <div class="share-prompt"><?php echo do_shortcode('[apss_share]'); ?></div>
+                  </li>
+                </ul>
               </div>
             </article>
         </div>
@@ -66,7 +76,7 @@ get_template_part('includes/header'); ?>
       <?php
     
         $args = array(
-          'posts_per_page' => -1,
+          'posts_per_page' => 100,
           'offset' => 2
         );
 
@@ -89,7 +99,17 @@ get_template_part('includes/header'); ?>
                 </a>
               </header>
               <?php the_excerpt(); ?>
-              <a href="<?php the_permalink(); ?>" class="link-info">Ver Más</a>
+            </div>
+            <div class="foot">
+              <ul>
+                <li><i class="fa fa-external-link" aria-hidden="true"></i> 
+                  <a href="<?php the_permalink(); ?>">View More</a>
+                </li>
+                <li class="share-feed"><i class="fa fa-share" aria-hidden="true"></i> 
+                  Share 
+                  <div class="share-prompt"><?php echo do_shortcode('[apss_share]'); ?></div>
+                </li>
+              </ul>
             </div>
           </article>
         </div>
