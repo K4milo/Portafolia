@@ -6,51 +6,61 @@ HOME
 		//---------- hero banner
 		&.slider {
 			height: 100vh;
+			min-height: 650px;
 			background-image: url('../img/bg_banner.png');
-			background-size: cover;
-			background-position: center right;
+			background-size: 100%;
+			background-position: -75px 0;
 			background-repeat: no-repeat;
-			p {
-				text-align: right;
-				font-size: 3em;
-				font-family: $aileronltH;
-				display: inline-block;
-				width: 100%;
-				padding: 0 10%;
-				&:first-child {
-					padding-top: 20%;
-					strong{
-						display: inline-block;
-						margin: 0 0.2em;
-						background-color: $blue;
-						opacity: 0;
-						transition: all 0.8s ease-in;
+			position: relative;
+			.txt-slider{
+				display: block;
+				position: absolute;
+				width: 70%;
+				height: 220px;
+				top: 50%;
+				right: 5%;
+				margin-top: -110px;
+				p {
+					text-align: right;
+					font-size: 3em;
+					font-family: $aileronltH;
+					display: inline-block;
+					width: 100%;
+					padding: 0 10%;
+					&:first-child {
+						strong{
+							display: inline-block;
+							margin: 0 0.2em;
+							background-color: $blue;
+							opacity: 0;
+							transition: all 0.8s ease-in;
+						}
 					}
-				}
-				&:nth-child(2) { 
-					strong{
-						display: inline-block;
-						margin: 0 0.2em;
-						background-color: $purple;
-						opacity: 0;
-						transition: all 0.8s ease-in;
+					&:nth-child(2) { 
+						strong{
+							display: inline-block;
+							margin: 0 0.2em;
+							background-color: $purple;
+							opacity: 0;
+							transition: all 0.8s ease-in;
+						}
 					}
-				}
-				&:nth-child(3) {
-					strong{
-						display: inline-block;
-						margin: 0 0.2em;
-						background-color: black;
-						color: white; 
-						opacity: 0;
-						transition: all 0.8s ease-in;
+					&:nth-child(3) {
+						strong{
+							display: inline-block;
+							margin: 0 0.2em;
+							background-color: black;
+							color: white; 
+							opacity: 0;
+							transition: all 0.8s ease-in;
+						}
 					}
 				}
 			}
 
 			.bottom-slider {
 				position: absolute;
-				bottom: 3em;
+				bottom: 2em;
 				width: 122px;
 				text-align: center;
 				left: 47%;
@@ -139,6 +149,9 @@ HOME
 				.text{
 					font-family: $aileronltH;
 					font-size: 2.5em;
+					a {
+						color: black;
+					}
 				}
 				//item 1
 				&.item-1,

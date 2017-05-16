@@ -10,12 +10,14 @@ get_template_part('includes/header'); ?>
 <div class="container-fluid">
 
   <div class="row slider">
-    <?php the_field('texto_slider'); ?>
+    <div class="txt-slider">
+      <?php the_field('texto_slider'); ?>
+    </div>
     <a href="#studio" class="bottom-slider">Learn More <img src="<?php bloginfo('template_url'); ?>/img/caret-down.png" class="caretd"></a>
   </div><!-- /.row -->
 
 
-  <div class="row studio wow fadeInUp" id="studio" data-wow-duration="1s" data-wow-delay="1.5s">
+  <div class="row studio wow fadeIn" id="studio" data-wow-duration=".5s" data-wow-delay=".5s">
     <?php the_content(); ?>
   </div><!-- /.row -->
 
@@ -31,8 +33,8 @@ get_template_part('includes/header'); ?>
   				while(have_rows('items')): the_row(); 
   		?>
 	  		<div class="col-md-4">
-	  			<div class="item wow fadeI" data-wow-duration="1.<?php echo $counter; ?>s" data-wow-delay=".5s">
-	  				<figure class="wow fadeIn" data-wow-delay=".5s">
+	  			<div class="item wow fadeIn" data-wow-duration="1.<?php echo $counter; ?>s">
+	  				<figure class="wow fadeIn">
 	  					<img src="<?php the_sub_field('icono'); ?>">
 	  				</figure>
 	  				<h3 class="titulo wow  fadeIn">
@@ -47,8 +49,7 @@ get_template_part('includes/header'); ?>
           $counter++;
   			endwhile;
   		endwhile; ?>
-
-  		<a href="#" class="blackBtn wow fadeIn">What We Do</a>
+  		<a href="http://portafolia.studio/what-we-do/" class="blackBtn">What We Do</a>
   	</div>
   </div><!-- /.row -->
 
@@ -67,7 +68,7 @@ get_template_part('includes/header'); ?>
 	  					<?php the_sub_field('titulo'); ?>
 	  				</h3>
 	  				<div class="text wow fadeIn">
-	  					<?php the_sub_field('texto'); ?>
+	  					<a href="<?php the_sub_field('vinculo_relacionado'); ?>"><?php the_sub_field('texto'); ?></a>
 	  				</div>
 	  			</div>
 	  		</div>

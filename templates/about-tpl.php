@@ -43,7 +43,7 @@ get_template_part('includes/header'); ?>
 
       <div class="short-text">
         <?php the_field('texto_corto'); ?>
-        <a href="#" class="blackBtn wow fadeIn">Read More <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+        <a href="#" class="blackBtn toggleBtn wow fadeIn">Read More <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
       </div>
 
       <div class="long-text">

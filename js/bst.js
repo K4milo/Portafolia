@@ -21,7 +21,7 @@
 		});
 
 		//read more
-		$('.blackBtn').click(function(event) {
+		$('.toggleBtn').click(function(event) {
 			/* Act on the event */
 			event.preventDefault();
 			$('.long-text').toggle(400);
