@@ -12,6 +12,75 @@ HOME
 			background-position: -75px 0;
 			background-repeat: no-repeat;
 			position: relative;
+
+			//menu slider
+			.slider-nav{
+				position: absolute;
+				bottom: 20%;
+				right: 13%;
+				width: 60%;
+				text-align: right;
+				li {
+					list-style: none;
+					display: inline-block;
+					min-width: 130px;
+					a {
+						display: block;
+						text-align: center;
+						color: white;
+						background-size: 0%;
+						background: transparent;
+						transition: all 2s ease;
+						padding: 0.4em;
+						border-right: 4px solid;
+						transition: all .5s ease;
+						&:hover {
+							transition: all .5s ease;
+						}
+					}
+
+					&:first-child {
+						a {
+							border-color: $black;
+							&:hover {
+								background-size: 100%;
+								background: $black;
+							}
+						}
+					}
+					&:nth-child(2) {
+						a {
+							border-color: $blue;
+							&:hover {
+								background-size: 100%;
+								background: $blue;
+							}
+						}
+					}
+					&:nth-child(3) {
+						a {
+							border-color: $purple;
+							&:hover {
+								background-size: 100%;
+								background: $purple;
+							}
+						}
+					}
+					&:nth-child(4) {
+						a {
+							border-color: $grey-5;
+							&:hover {
+								background-size: 100%;
+								background: $grey-5;
+							}
+						}
+					}
+					&:last-child {
+						display: none;
+					}
+				}
+			}
+
 			.txt-slider{
 				display: block;
 				position: absolute;

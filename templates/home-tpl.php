@@ -14,6 +14,15 @@ get_template_part('includes/header'); ?>
       <?php the_field('texto_slider'); ?>
     </div>
     <a href="#studio" class="bottom-slider">Learn More <img src="<?php bloginfo('template_url'); ?>/img/caret-down.png" class="caretd"></a>
+
+    <?php
+        wp_nav_menu( array(
+            'theme_location'    => 'navbar-left',
+            'depth'             => 2,
+            'menu_class'        => 'slider-nav')
+        );
+    ?>
+
   </div><!-- /.row -->
 
 
