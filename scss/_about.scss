@@ -30,8 +30,8 @@ About
 	.profile {
 		padding: 3em 0;
 		figure {
-			width: 80px;
-			height: 80px;
+			width: 180px;
+			height: 180px;
 			overflow: hidden;
 			margin: 1em auto;
 			border-radius: 100%;
@@ -273,10 +273,12 @@ About
 
 		.flip-container {
 			perspective: 1000px;
+			transform-style: preserve-3d;
 		}
 			/* flip the pane when hovered */
 			.flip-container:hover .flipper, .flip-container.hover .flipper {
 				transform: rotateY(180deg);
+				transform-style: preserve-3d;
 			}
 
 		.flip-container, .front, .back {
@@ -310,6 +312,7 @@ About
 			-ms-transform-style: preserve-3d;
 			-o-transform-style: preserve-3d;
 			transform-style: preserve-3d;
+
 		}
 
 		/* back, initially hidden pane */
@@ -326,10 +329,15 @@ About
 		.service-square {
 			text-align: center;
 			.front{
+				img{
+					max-width: 100%;
+					margin: 5em auto 0;
+				}
+
 				h4{
 					font-weight: bold;
 					font-size: 2em;
-					padding: 2.5em 1em;
+					padding: 1em 1em;
 				}
 			}
 			.back {
@@ -386,9 +394,9 @@ About
 				width: 20%;
 				float: left;
 				margin: 0 -2px;
-				padding: 1.3em 0 1.67em 4em;
+				padding: 1em 0 0 2em;
 				font-weight: bolder;
-				font-size: 1em;
+				font-size: 1.3em;
 				min-height: 69px;
 				&::after{
 					content:"";

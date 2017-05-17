@@ -25,53 +25,57 @@ HOME
 					display: inline-block;
 					min-width: 130px;
 					a {
-						display: block;
+						display: inline-block;
 						text-align: center;
 						color: white;
-						background-size: 0%;
-						background: transparent;
-						transition: all 2s ease;
 						padding: 0.4em;
 						border-right: 4px solid;
-						transition: all .5s ease;
-						&:hover {
-							transition: all .5s ease;
-						}
+						background-position: 0;
+						background-size: 200%;
+						transition: all 0.7s;
 					}
 
 					&:first-child {
 						a {
+							background-size: 200%;
 							border-color: $black;
+							background: linear-gradient(to right, $black 50%, transparent 50%);
 							&:hover {
-								background-size: 100%;
-								background: $black;
+								background-position: -100%;
 							}
 						}
 					}
 					&:nth-child(2) {
 						a {
+							background-size: 200%;
 							border-color: $blue;
+							background: linear-gradient(to right, $blue 50%, transparent 50%);
 							&:hover {
-								background-size: 100%;
-								background: $blue;
+								background-position: -100%;
+								transition: all .5s ease;
 							}
 						}
 					}
 					&:nth-child(3) {
 						a {
+							background-size: 200%;
 							border-color: $purple;
+							background: linear-gradient(to right, $purple 50%, transparent 50%);
 							&:hover {
-								background-size: 100%;
-								background: $purple;
+								background-position: -100%;
+								transition: all .5s ease;
 							}
 						}
 					}
 					&:nth-child(4) {
 						a {
+							background-size: 200%;
 							border-color: $grey-5;
+							background: linear-gradient(to right, $grey-5 0%, transparent 0%);
+							transition: all 2.5s ease;
 							&:hover {
-								background-size: 100%;
-								background: $grey-5;
+								background-position: -100%;
+								background: linear-gradient(to right, $grey-5 100%, transparent 0%);
 							}
 						}
 					}

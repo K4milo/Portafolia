@@ -2496,37 +2496,42 @@ HOME
       display: inline-block;
       min-width: 130px; }
       .home .row.slider .slider-nav li a {
-        display: block;
+        display: inline-block;
         text-align: center;
         color: white;
-        background-size: 0%;
-        background: transparent;
-        transition: all 2s ease;
         padding: 0.4em;
         border-right: 4px solid;
-        transition: all .5s ease; }
-        .home .row.slider .slider-nav li a:hover {
-          transition: all .5s ease; }
+        background-position: 0;
+        background-size: 200%;
+        transition: all 0.7s; }
       .home .row.slider .slider-nav li:first-child a {
-        border-color: #000000; }
+        background-size: 200%;
+        border-color: #000000;
+        background: linear-gradient(to right, #000000 50%, transparent 50%); }
         .home .row.slider .slider-nav li:first-child a:hover {
-          background-size: 100%;
-          background: #000000; }
+          background-position: -100%; }
       .home .row.slider .slider-nav li:nth-child(2) a {
-        border-color: #00A19A; }
+        background-size: 200%;
+        border-color: #00A19A;
+        background: linear-gradient(to right, #00A19A 50%, transparent 50%); }
         .home .row.slider .slider-nav li:nth-child(2) a:hover {
-          background-size: 100%;
-          background: #00A19A; }
+          background-position: -100%;
+          transition: all .5s ease; }
       .home .row.slider .slider-nav li:nth-child(3) a {
-        border-color: #E71D73; }
+        background-size: 200%;
+        border-color: #E71D73;
+        background: linear-gradient(to right, #E71D73 50%, transparent 50%); }
         .home .row.slider .slider-nav li:nth-child(3) a:hover {
-          background-size: 100%;
-          background: #E71D73; }
+          background-position: -100%;
+          transition: all .5s ease; }
       .home .row.slider .slider-nav li:nth-child(4) a {
-        border-color: #555656; }
+        background-size: 200%;
+        border-color: #555656;
+        background: linear-gradient(to right, #555656 0%, transparent 0%);
+        transition: all 2.5s ease; }
         .home .row.slider .slider-nav li:nth-child(4) a:hover {
-          background-size: 100%;
-          background: #555656; }
+          background-position: -100%;
+          background: linear-gradient(to right, #555656 100%, transparent 0%); }
       .home .row.slider .slider-nav li:last-child {
         display: none; }
   .home .row.slider .txt-slider {
@@ -2725,8 +2730,8 @@ About
   .page-template-about-tpl .profile {
     padding: 3em 0; }
     .page-template-about-tpl .profile figure {
-      width: 80px;
-      height: 80px;
+      width: 180px;
+      height: 180px;
       overflow: hidden;
       margin: 1em auto;
       border-radius: 100%; }
@@ -2893,9 +2898,11 @@ About
     margin: 2em auto;
     padding: .3em; }
   .page-template-wedo .list-bs-items .flip-container {
-    perspective: 1000px; }
+    perspective: 1000px;
+    transform-style: preserve-3d; }
   .page-template-wedo .list-bs-items .flip-container:hover .flipper, .page-template-wedo .list-bs-items .flip-container.hover .flipper {
-    transform: rotateY(180deg); }
+    transform: rotateY(180deg);
+    transform-style: preserve-3d; }
   .page-template-wedo .list-bs-items .flip-container, .page-template-wedo .list-bs-items .front, .page-template-wedo .list-bs-items .back {
     width: 100%;
     height: 320px; }
@@ -2926,10 +2933,13 @@ About
     transform-style: preserve-3d; }
   .page-template-wedo .list-bs-items .service-square {
     text-align: center; }
+    .page-template-wedo .list-bs-items .service-square .front img {
+      max-width: 100%;
+      margin: 5em auto 0; }
     .page-template-wedo .list-bs-items .service-square .front h4 {
       font-weight: bold;
       font-size: 2em;
-      padding: 2.5em 1em; }
+      padding: 1em 1em; }
     .page-template-wedo .list-bs-items .service-square .back {
       font-size: 1.3em;
       padding: 2.5em 1em;
@@ -2972,9 +2982,9 @@ About
       width: 20%;
       float: left;
       margin: 0 -2px;
-      padding: 1.3em 0 1.67em 4em;
+      padding: 1em 0 0 2em;
       font-weight: bolder;
-      font-size: 1em;
+      font-size: 1.3em;
       min-height: 69px; }
       .page-template-wedo .methodology ul li::after {
         content: "";

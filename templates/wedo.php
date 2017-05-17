@@ -20,6 +20,7 @@ get_template_part('includes/header'); ?>
           <div class="flip-container">
             <div class="flipper">
               <div class="front">
+                <img src="<?php the_sub_field('icono_servicio'); ?>" alt="<?php the_sub_field('enunciado'); ?>">
                 <h4><?php the_sub_field('enunciado'); ?></h4>
               </div>
               <div class="back">
