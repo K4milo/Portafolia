@@ -2417,6 +2417,9 @@ HEADER
   top: 50%;
   right: -134px;
   transform: rotate(-90deg); }
+  @media (max-width: 768px) {
+    .social-bs {
+      right: -155px; } }
   .social-bs li {
     display: inline-block; }
     .social-bs li a {
@@ -2445,6 +2448,10 @@ HEADER
       text-indent: -99999px; }
   .navbar .navbar-collapse {
     float: right; }
+    @media (max-width: 768px) {
+      .navbar .navbar-collapse {
+        float: none;
+        clear: both; } }
     .navbar .navbar-collapse ul.navbar-nav {
       background: transparent; }
       .navbar .navbar-collapse ul.navbar-nav li a {
@@ -2460,6 +2467,9 @@ HEADER
           position: absolute;
           top: 15px;
           right: 0; }
+          @media (max-width: 768px) {
+            .navbar .navbar-collapse ul.navbar-nav li a::after {
+              display: none; } }
         .navbar .navbar-collapse ul.navbar-nav li a:hover, .navbar .navbar-collapse ul.navbar-nav li a:focus {
           background: transparent; }
       .navbar .navbar-collapse ul.navbar-nav li:last-child a {
@@ -2471,6 +2481,9 @@ HEADER
         margin: 16px 10px 0; }
         .navbar .navbar-collapse ul.navbar-nav li:last-child a::after {
           display: none; }
+        @media (max-width: 768px) {
+          .navbar .navbar-collapse ul.navbar-nav li:last-child a {
+            margin: 16px 14px 12px; } }
       .navbar .navbar-collapse ul.navbar-nav li.active a {
         background-color: transparent; }
 
@@ -2491,47 +2504,50 @@ HOME
     right: 13%;
     width: 60%;
     text-align: right; }
+    @media (max-width: 768px) {
+      .home .row.slider .slider-nav {
+        display: none; } }
     .home .row.slider .slider-nav li {
       list-style: none;
       display: inline-block;
-      min-width: 130px; }
+      min-width: 130px;
+      background-position: -100%;
+      background-size: 200%;
+      transition: all 0.7s; }
       .home .row.slider .slider-nav li a {
         display: inline-block;
         text-align: center;
         color: white;
         padding: 0.4em;
-        border-right: 4px solid;
-        background-position: 0;
-        background-size: 200%;
-        transition: all 0.7s; }
-      .home .row.slider .slider-nav li:first-child a {
-        background-size: 200%;
-        border-color: #000000;
-        background: linear-gradient(to right, #000000 50%, transparent 50%); }
-        .home .row.slider .slider-nav li:first-child a:hover {
-          background-position: -100%; }
-      .home .row.slider .slider-nav li:nth-child(2) a {
-        background-size: 200%;
-        border-color: #00A19A;
-        background: linear-gradient(to right, #00A19A 50%, transparent 50%); }
-        .home .row.slider .slider-nav li:nth-child(2) a:hover {
-          background-position: -100%;
-          transition: all .5s ease; }
-      .home .row.slider .slider-nav li:nth-child(3) a {
-        background-size: 200%;
-        border-color: #E71D73;
-        background: linear-gradient(to right, #E71D73 50%, transparent 50%); }
-        .home .row.slider .slider-nav li:nth-child(3) a:hover {
-          background-position: -100%;
-          transition: all .5s ease; }
-      .home .row.slider .slider-nav li:nth-child(4) a {
-        background-size: 200%;
-        border-color: #555656;
-        background: linear-gradient(to right, #555656 0%, transparent 0%);
-        transition: all 2.5s ease; }
-        .home .row.slider .slider-nav li:nth-child(4) a:hover {
-          background-position: -100%;
-          background: linear-gradient(to right, #555656 100%, transparent 0%); }
+        border-right: 4px solid; }
+      .home .row.slider .slider-nav li:first-child {
+        background: linear-gradient(to left, #000000 50%, transparent 50%);
+        background-size: 200%; }
+        .home .row.slider .slider-nav li:first-child a {
+          border-color: #000000; }
+        .home .row.slider .slider-nav li:first-child:hover {
+          background-position: 100%; }
+      .home .row.slider .slider-nav li:nth-child(2) {
+        background: linear-gradient(to left, #00A19A 50%, transparent 50%);
+        background-size: 200%; }
+        .home .row.slider .slider-nav li:nth-child(2) a {
+          border-color: #00A19A; }
+        .home .row.slider .slider-nav li:nth-child(2):hover {
+          background-position: 100%; }
+      .home .row.slider .slider-nav li:nth-child(3) {
+        background: linear-gradient(to left, #E71D73 50%, transparent 50%);
+        background-size: 200%; }
+        .home .row.slider .slider-nav li:nth-child(3) a {
+          border-color: #E71D73; }
+        .home .row.slider .slider-nav li:nth-child(3):hover {
+          background-position: 100%; }
+      .home .row.slider .slider-nav li:nth-child(4) {
+        background: linear-gradient(to left, #555656 50%, transparent 50%);
+        background-size: 200%; }
+        .home .row.slider .slider-nav li:nth-child(4) a {
+          border-color: #555656; }
+        .home .row.slider .slider-nav li:nth-child(4):hover {
+          background-position: 100%; }
       .home .row.slider .slider-nav li:last-child {
         display: none; }
   .home .row.slider .txt-slider {
@@ -2542,13 +2558,26 @@ HOME
     top: 50%;
     right: 5%;
     margin-top: -110px; }
+    @media (max-width: 768px) {
+      .home .row.slider .txt-slider {
+        position: relative;
+        width: 90%;
+        max-width: 270px;
+        height: auto;
+        margin: 58% auto;
+        top: inherit;
+        right: inherit; } }
     .home .row.slider .txt-slider p {
       text-align: right;
       font-size: 3em;
       font-family: "Aileron Heavy";
       display: inline-block;
       width: 100%;
-      padding: 0 10%; }
+      padding: 0 7%; }
+      @media (max-width: 768px) {
+        .home .row.slider .txt-slider p {
+          text-align: center;
+          font-size: 1.3em; } }
       .home .row.slider .txt-slider p:first-child strong {
         display: inline-block;
         margin: 0 0.2em;
@@ -2576,6 +2605,10 @@ HOME
     left: 47%;
     font-weight: bold;
     color: black; }
+    @media (max-width: 768px) {
+      .home .row.slider .bottom-slider {
+        left: 50%;
+        margin-left: -61px; } }
 
 .home .row.studio {
   text-align: center;
@@ -2595,6 +2628,10 @@ HOME
     margin: 1em auto;
     font-size: 1.8em;
     line-height: 1.7; }
+    @media (max-width: 768px) {
+      .home .row.studio p {
+        font-size: 1.4em;
+        padding: 0 10%; } }
 
 .home .row.values {
   min-height: 600px;
@@ -2639,12 +2676,21 @@ HOME
     .home .row.wedo .item .text {
       font-family: "Aileron Heavy";
       font-size: 2.5em; }
+      @media (max-width: 768px) {
+        .home .row.wedo .item .text {
+          font-size: 1em;
+          text-align: center; } }
       .home .row.wedo .item .text a {
         color: black; }
     .home .row.wedo .item.item-1 figure, .home .row.wedo .item.item-3 figure {
       position: absolute;
       top: 2em;
       right: 2em; }
+      @media (max-width: 768px) {
+        .home .row.wedo .item.item-1 figure, .home .row.wedo .item.item-3 figure {
+          position: relative;
+          top: inherit;
+          left: inherit; } }
       .home .row.wedo .item.item-1 figure img, .home .row.wedo .item.item-3 figure img {
         display: block; }
     .home .row.wedo .item.item-1 .titulo, .home .row.wedo .item.item-3 .titulo {
@@ -2656,10 +2702,22 @@ HOME
       left: .2em;
       text-align: left;
       background-color: #00A19A; }
+      @media (max-width: 768px) {
+        .home .row.wedo .item.item-1 .titulo, .home .row.wedo .item.item-3 .titulo {
+          font-size: 1em;
+          top: inherit;
+          position: relative;
+          left: inherit;
+          text-align: center; } }
     .home .row.wedo .item.item-2 figure, .home .row.wedo .item.item-4 figure {
       position: absolute;
       top: 2em;
       left: 2em; }
+      @media (max-width: 768px) {
+        .home .row.wedo .item.item-2 figure, .home .row.wedo .item.item-4 figure {
+          position: relative;
+          top: inherit;
+          right: inherit; } }
     .home .row.wedo .item.item-2 .titulo, .home .row.wedo .item.item-4 .titulo {
       font-family: "Aileron Bold";
       display: block;
@@ -2670,6 +2728,13 @@ HOME
       right: .2em;
       text-align: left;
       background-color: #E71D73; }
+      @media (max-width: 768px) {
+        .home .row.wedo .item.item-2 .titulo, .home .row.wedo .item.item-4 .titulo {
+          font-size: 1em;
+          top: inherit;
+          position: relative;
+          right: inherit;
+          text-align: center; } }
 
 .home .testimonios h3 {
   text-align: center;

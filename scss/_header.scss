@@ -7,6 +7,9 @@ HEADER
 	top: 50%;
 	right: -134px;
     transform: rotate(-90deg);
+    @include mobile {
+    	right: -155px;
+    }
 	li{
 		display: inline-block;
 		a {
@@ -45,6 +48,10 @@ HEADER
 	//menu strcture
 	.navbar-collapse{
 		float: right;
+		@include mobile{
+			float: none;
+			clear: both;
+		}
 		ul.navbar-nav{
 			background: transparent;
 			li{
@@ -61,6 +68,9 @@ HEADER
 						position: absolute;
 						top: 15px;
 						right: 0;
+						@include mobile{
+							display: none;
+						}
 					}
 
 					&:hover,
@@ -79,6 +89,9 @@ HEADER
 						margin: 16px 10px 0;
 						&::after {
 							display: none;
+						}
+						@include mobile {
+							margin: 16px 14px 12px;
 						}
 					}
 				}
