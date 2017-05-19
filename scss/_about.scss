@@ -27,6 +27,18 @@ About
 		}
 	}
 
+	//styles for spanish
+	.lang-es{
+		.content {
+			header{ 
+				h2, h3{
+					font-size: 1.3em;
+					margin-top: 2em;
+				}
+			}
+		}
+	}
+
 	.profile {
 		padding: 3em 0;
 		figure {
@@ -465,7 +477,9 @@ About
 }
 
 //Contact page
+.page-id-339,
 .page-id-121 {
+	margin-top:120px;
 	header{
 		max-width: 400px;
 		text-align: center;
@@ -479,6 +493,12 @@ About
 			font-size: 2em;
 			padding: .4em;
 		}
+	}
+
+	.content {
+		max-width: 960px;
+		margin: 0 auto;
+		overflow: hidden;
 	}
 
 	form{

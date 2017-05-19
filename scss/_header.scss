@@ -26,6 +26,36 @@ HEADER
 	}
 }
 
+.langs-lst {
+	ul {
+		position: absolute;
+		z-index: 20;
+		top: 50%;
+		left: -36px;
+	    transform: rotate(-90deg);
+	    @include mobile {
+	    	left: -55px;
+	    }
+		li{
+			display: inline-block;
+			a {
+				color: $black;
+				font-weight: bold;
+				padding: 0.5em 1em;
+				border-right: 1px solid;
+			}
+			&:last-child{
+				a {
+					border-right: none;
+				}
+			}
+			.wpml-ls-display{
+				display: none;
+			}
+		}
+	}
+}
+
 .navbar{
 	background: white;
 	border: none;

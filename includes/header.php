@@ -16,7 +16,7 @@
 	You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
 </div>
 <![endif]-->
-
+<div class="lang wrap lang-<?php echo ICL_LANGUAGE_CODE; ?>">
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container">
     <div class="navbar-header">
@@ -41,6 +41,11 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
+
+<div class="langs-lst">
+<?php do_action('wpml_add_language_selector'); ?>
+</div>
+
 
 <ul class="social-bs">
   <li><a href="https://www.facebook.com/portafolia.studio/" target="_blank">Facebook</a></li>

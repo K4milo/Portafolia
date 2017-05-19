@@ -55,7 +55,18 @@ get_template_part('includes/header'); ?>
               <div class="foot">
                 <ul>
                   <li><i class="fa fa-external-link" aria-hidden="true"></i>
-                    <a href="<?php the_permalink(); ?>">View More</a>
+                    <?php
+                      if(ICL_LANGUAGE_CODE=='en'){
+                        ?>
+                        <a href="<?php the_permalink(); ?>">View More</a>
+                    <?php
+                      }
+                      if(ICL_LANGUAGE_CODE=='es'){
+                       ?>
+                       <a href="<?php the_permalink(); ?>">Ver Más</a>
+                       <?php 
+                      }
+                    ?>
                   </li>
                   <li class="share-feed">
                     <i class="fa fa-share" aria-hidden="true"></i>Share</a> 
@@ -103,7 +114,18 @@ get_template_part('includes/header'); ?>
             <div class="foot">
               <ul>
                 <li><i class="fa fa-external-link" aria-hidden="true"></i> 
-                  <a href="<?php the_permalink(); ?>">View More</a>
+                  <?php
+                      if(ICL_LANGUAGE_CODE=='en'){
+                        ?>
+                        <a href="<?php the_permalink(); ?>">View More</a>
+                    <?php
+                      }
+                      if(ICL_LANGUAGE_CODE=='es'){
+                       ?>
+                       <a href="<?php the_permalink(); ?>">Ver Más</a>
+                       <?php 
+                      }
+                    ?>
                 </li>
                 <li class="share-feed"><i class="fa fa-share" aria-hidden="true"></i> 
                   Share 

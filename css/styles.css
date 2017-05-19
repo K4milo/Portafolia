@@ -2430,6 +2430,27 @@ HEADER
     .social-bs li:last-child a {
       border-right: none; }
 
+.langs-lst ul {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: -36px;
+  transform: rotate(-90deg); }
+  @media (max-width: 768px) {
+    .langs-lst ul {
+      left: -55px; } }
+  .langs-lst ul li {
+    display: inline-block; }
+    .langs-lst ul li a {
+      color: #000000;
+      font-weight: bold;
+      padding: 0.5em 1em;
+      border-right: 1px solid; }
+    .langs-lst ul li:last-child a {
+      border-right: none; }
+    .langs-lst ul li .wpml-ls-display {
+      display: none; }
+
 .navbar {
   background: white;
   border: none;
@@ -2752,6 +2773,9 @@ HOME
     display: inline-block;
     margin: 1em 2em 3em; }
 
+.home .lang-es .row.slider .txt-slider {
+  width: 82%; }
+
 .newsletter {
   padding: 1em 0;
   text-align: center;
@@ -2792,6 +2816,9 @@ About
       max-width: 800px;
       margin: 1em auto;
       font-size: 1.4em; }
+  .page-template-about-tpl .lang-es .content header h2, .page-template-about-tpl .lang-es .content header h3 {
+    font-size: 1.3em;
+    margin-top: 2em; }
   .page-template-about-tpl .profile {
     padding: 3em 0; }
     .page-template-about-tpl .profile figure {
@@ -3096,41 +3123,57 @@ About
           right: 20px;
           top: 12px; }
 
-.page-id-121 header {
-  max-width: 400px;
-  text-align: center;
-  margin: 0 auto; }
-  .page-id-121 header h2, .page-id-121 header h3 {
-    display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
+.page-id-339,
+.page-id-121 {
+  margin-top: 120px; }
+  .page-id-339 header,
+  .page-id-121 header {
+    max-width: 400px;
     text-align: center;
-    margin: 5px;
-    font-size: 2em;
-    padding: .4em; }
-
-.page-id-121 form {
-  padding: 2em 0; }
-  .page-id-121 form br {
-    display: none; }
-  .page-id-121 form label {
-    font-weight: bold;
-    margin-top: 2em; }
-  .page-id-121 form .form-control {
-    width: 50%;
-    background-color: #D8D9DD;
-    padding: 2em; }
-  .page-id-121 form textarea.form-control {
-    width: 62%; }
-  .page-id-121 form .btn-primary {
-    float: right;
-    margin-right: 38%;
-    border-radius: 0;
-    padding: .3em 3em;
-    color: #ffffff;
-    background-color: #000000;
-    text-transform: uppercase;
-    letter-spacing: 3px; }
+    margin: 0 auto; }
+    .page-id-339 header h2, .page-id-339 header h3,
+    .page-id-121 header h2,
+    .page-id-121 header h3 {
+      display: inline-block;
+      background-color: #000000;
+      color: #ffffff;
+      text-align: center;
+      margin: 5px;
+      font-size: 2em;
+      padding: .4em; }
+  .page-id-339 .content,
+  .page-id-121 .content {
+    max-width: 960px;
+    margin: 0 auto;
+    overflow: hidden; }
+  .page-id-339 form,
+  .page-id-121 form {
+    padding: 2em 0; }
+    .page-id-339 form br,
+    .page-id-121 form br {
+      display: none; }
+    .page-id-339 form label,
+    .page-id-121 form label {
+      font-weight: bold;
+      margin-top: 2em; }
+    .page-id-339 form .form-control,
+    .page-id-121 form .form-control {
+      width: 50%;
+      background-color: #D8D9DD;
+      padding: 2em; }
+    .page-id-339 form textarea.form-control,
+    .page-id-121 form textarea.form-control {
+      width: 62%; }
+    .page-id-339 form .btn-primary,
+    .page-id-121 form .btn-primary {
+      float: right;
+      margin-right: 38%;
+      border-radius: 0;
+      padding: .3em 3em;
+      color: #ffffff;
+      background-color: #000000;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
 
 /*----------------------------------------
 blog

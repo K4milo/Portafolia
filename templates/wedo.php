@@ -37,9 +37,25 @@ get_template_part('includes/header'); ?>
   <div class="row methodology">
     <div class="container">
       <header>
-        <h3>Methodology</h3>
+      <?php
+        if(ICL_LANGUAGE_CODE=='en'){
+          echo '<h3>Methodology</h3>';
+        }
+        if(ICL_LANGUAGE_CODE=='es'){
+          echo '<h3>Metodología</h3>';
+        }
+      ?>
+        
       </header>
-      <p>Objetive-first Framework</p>
+      <?php
+        if(ICL_LANGUAGE_CODE=='en'){
+          echo '<p>Objetive-first Framework</p>';
+        }
+        if(ICL_LANGUAGE_CODE=='es'){
+          echo '<p>Nuestro Primer Objetivo</p>';
+        }
+      ?>
+      
       <ul class="line-path">
         <?php while ( have_rows('items_metodologia') ) : the_row(); ?>
           <li><?php the_sub_field('item_metodologia'); ?></li>

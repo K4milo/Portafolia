@@ -345,6 +345,17 @@ HOME
 			}
 		}
 	}
+	//styles for spanish
+	.lang-es{
+		.row{
+			//slider
+			&.slider{
+				.txt-slider {
+					width: 82%;
+				}
+			}
+		}
+	}
 }
 
 

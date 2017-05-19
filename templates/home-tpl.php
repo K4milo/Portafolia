@@ -13,7 +13,21 @@ get_template_part('includes/header'); ?>
     <div class="txt-slider">
       <?php the_field('texto_slider'); ?>
     </div>
-    <a href="#studio" class="bottom-slider">Learn More <img src="<?php bloginfo('template_url'); ?>/img/caret-down.png" class="caretd"></a>
+
+    <?php
+        if(ICL_LANGUAGE_CODE=='en'){
+          ?>
+          <a href="#studio" class="bottom-slider">Learn More <img src="<?php bloginfo('template_url'); ?>/img/caret-down.png" class="caretd"></a>
+      <?php
+        }
+        if(ICL_LANGUAGE_CODE=='es'){
+         ?>
+         <a href="#studio" class="bottom-slider">Ver Más <img src="<?php bloginfo('template_url'); ?>/img/caret-down.png" class="caretd"></a>
+         <?php 
+        }
+      ?>
+
+    
 
     <?php
         wp_nav_menu( array(
@@ -33,8 +47,21 @@ get_template_part('includes/header'); ?>
 
   <div class="row values">
   	<header>
-  		<h2>You want to know how we do it?</h2>
-      <h3>Simple. We speak art.</h3>
+      <?php
+        if(ICL_LANGUAGE_CODE=='en'){
+          ?>
+          <h2>You want to know how we do it?</h2>
+          <h3>Simple. We speak art.</h3>
+      <?php
+        }
+        if(ICL_LANGUAGE_CODE=='es'){
+         ?>
+         <h2>¿Quieres saber que hacemos?</h2>
+         <h3>Simple. Hablamos arte.</h3>
+         <?php 
+        }
+      ?>
+  		
   	</header>
   	<div class="container clearfix">
   		<?php while(have_rows('valores_agregados')): the_row();
@@ -58,8 +85,20 @@ get_template_part('includes/header'); ?>
           $counter++;
   			endwhile;
   		endwhile; ?>
-  		<a href="http://portafolia.studio/what-we-do/" class="blackBtn">What We Do</a>
   	</div>
+    <?php
+      if(ICL_LANGUAGE_CODE=='en'){
+        ?>
+        <a href="http://portafolia.studio/what-we-do/" class="blackBtn">What We Do</a>
+    <?php
+      }
+
+      if(ICL_LANGUAGE_CODE=='es'){
+       ?>
+        <a href="http://portafolia.studio/what-we-do/" class="blackBtn">Que Hacemos</a>
+       <?php 
+      }
+    ?>
   </div><!-- /.row -->
 
   <div class="row wedo">
@@ -90,9 +129,19 @@ get_template_part('includes/header'); ?>
 
   <div class="row testimonios">
     <div class="container clearfix">
-      <h3 class="titulo wow  fadeIn">
-        What They Say
-      </h3>
+      <?php
+        if(ICL_LANGUAGE_CODE=='en'){
+          ?>
+          <h3 class="titulo wow  fadeIn">What They Say</h3>
+      <?php
+        }
+        if(ICL_LANGUAGE_CODE=='es'){
+         ?>
+         <h3 class="titulo wow  fadeIn">Que Dicen</h3>
+         <?php 
+        }
+      ?>
+      
       <ul>
         <?php 
             while(have_rows('testimonios')): the_row(); 
@@ -109,7 +158,14 @@ get_template_part('includes/header'); ?>
 
 <div class="row newsletter">
   <div class="container">
-    <?php echo do_shortcode('[contact-form-7 id="164" title="Form inglés"]'); ?>
+    <?php
+        if(ICL_LANGUAGE_CODE=='en'){
+          echo do_shortcode('[contact-form-7 id="164" title="Form inglés"]');
+        }
+        if(ICL_LANGUAGE_CODE=='es'){
+          echo do_shortcode('[contact-form-7 id="340" title="Form Español"]');
+        }
+      ?>
   </div>
 </div>
 
