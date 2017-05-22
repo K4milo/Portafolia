@@ -23,6 +23,10 @@ About
 				max-width: 800px;
 				margin: 1em auto;
 				font-size: 1.4em;
+				@include mobile {
+			    	font-size: 1em;
+			    	padding: 0 15%;
+			    }
 			}
 		}
 	}
@@ -76,6 +80,10 @@ About
 				max-width: 800px;
 				margin: 1em auto;
 				font-size: 1.4em;
+				@include mobile {
+			    	font-size: 1em;
+			    	padding: 0 15%;
+			    }
 			}
 			.blackBtn{
 				text-align: center;
@@ -428,6 +436,14 @@ About
 						display: none;
 					}
 				}
+				@include mobile {
+			    	width: 100%;
+			    	padding: 1em;
+			    	text-align: center;
+			    	&::after {
+			    		display: none;
+			    	}
+			    }
 			}
 		}
 	}
@@ -503,6 +519,9 @@ About
 
 	form{
 		padding: 2em 0;
+		@include mobile {
+			padding: 1em 15%;
+		}
 		br{
 			display: none;
 		}
@@ -514,9 +533,15 @@ About
 			width: 50%;
 			background-color: $grey;
 			padding: 2em;
+			@include mobile {
+				width: 100%;
+			}
 		}
 		textarea.form-control{
 			width: 62%;
+			@include mobile {
+				width: 100%;
+			}
 		}
 
 		.btn-primary {
@@ -528,7 +553,11 @@ About
 			background-color: $black;
 			text-transform: uppercase;
 			letter-spacing: 3px;
+			@include mobile {
+				float: none;
+				margin: 1em auto;
+				display: block; 
+			}
 		}
-
 	}
 }

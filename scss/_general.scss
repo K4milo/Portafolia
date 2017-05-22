@@ -1,6 +1,7 @@
-body,html{
+body,html {
 	font-family: $aileron;
 	letter-spacing: 0.14em;
+	color: $greyTxt;
 	//blog single
 	.blog-single{
 		max-width: 600px;
@@ -24,6 +25,10 @@ body,html{
 		p{
 			margin-bottom: 2em;
 		}
+	}
+
+	p {
+		color: $greyTxt;
 	}
 
 	a{
@@ -58,6 +63,10 @@ body,html{
 	}
 }
 //mixins
+
+body {
+	margin-top: 60px; 
+}
 
 @mixin blackBtn {
   	a {

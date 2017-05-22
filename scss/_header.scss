@@ -73,6 +73,12 @@ HEADER
 			height: 82px;
 			background-image: url('../img/logo.png');
 			text-indent: -99999px;
+			@include mobile {
+		    	width: 200px;
+		    	height: 62px;
+		    	background-size: 100%;
+		    	background-repeat: no-repeat;
+		    }
 		}
 	}
 	//menu strcture
