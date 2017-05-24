@@ -47,8 +47,13 @@ body,html {
 
 	strong {
 		display: inline-block; 
+		font-family: $aileronltB;
 	}
 
+	strong,
+	b {
+		font-family: $aileronltB;
+	}
 	//for terms
 	&.page-id-165{
 		h3{

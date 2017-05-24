@@ -173,8 +173,9 @@ HOME
 				width: auto;
 				margin: 1em auto;
 				background-color: $blue;
-				padding: 0.5em;
+				padding: 0.3em;
 				font-size: 27px;
+				text-transform: capitalize;
 			}
 			p {
 				max-width: 800px;
@@ -343,6 +344,7 @@ HOME
 			display: inline-block;
 			margin: 2em auto;
 			padding: .3em;
+			text-transform: capitalize;
 		}
 
 		ul {
