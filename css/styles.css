@@ -2358,7 +2358,7 @@
 
 body, html {
   font-family: "Aileron";
-  letter-spacing: 0.14em;
+  letter-spacing: 2px;
   color: #231F20; }
   body .blog-single, html .blog-single {
     max-width: 600px;
@@ -2404,7 +2404,7 @@ body {
   border-radius: 0;
   color: white; }
   .btn.blue {
-    background-color: #00A19A; }
+    background-color: #5AC4BE; }
 
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -2561,17 +2561,17 @@ HOME
         .home .row.slider .slider-nav li:first-child:hover {
           background-position: 100%; }
       .home .row.slider .slider-nav li:nth-child(2) {
-        background: linear-gradient(to left, #00A19A 50%, transparent 50%);
+        background: linear-gradient(to left, #5AC4BE 50%, transparent 50%);
         background-size: 200%; }
         .home .row.slider .slider-nav li:nth-child(2) a {
-          border-color: #00A19A; }
+          border-color: #5AC4BE; }
         .home .row.slider .slider-nav li:nth-child(2):hover {
           background-position: 100%; }
       .home .row.slider .slider-nav li:nth-child(3) {
-        background: linear-gradient(to left, #E71D73 50%, transparent 50%);
+        background: linear-gradient(to left, #EE2A7B 50%, transparent 50%);
         background-size: 200%; }
         .home .row.slider .slider-nav li:nth-child(3) a {
-          border-color: #E71D73; }
+          border-color: #EE2A7B; }
         .home .row.slider .slider-nav li:nth-child(3):hover {
           background-position: 100%; }
       .home .row.slider .slider-nav li:nth-child(4) {
@@ -2614,13 +2614,13 @@ HOME
       .home .row.slider .txt-slider p:first-child strong {
         display: inline-block;
         margin: 0 0.2em;
-        background-color: #00A19A;
+        background-color: #5AC4BE;
         opacity: 0;
         transition: all 0.8s ease-in; }
       .home .row.slider .txt-slider p:nth-child(2) strong {
         display: inline-block;
         margin: 0 0.2em;
-        background-color: #E71D73;
+        background-color: #EE2A7B;
         opacity: 0;
         transition: all 0.8s ease-in; }
       .home .row.slider .txt-slider p:nth-child(3) strong {
@@ -2649,13 +2649,12 @@ HOME
   padding: 3em 0;
   min-height: 600px; }
   .home .row.studio h2 {
-    font-family: "Aileron Bold";
-    display: block;
+    display: inline-block;
     width: auto;
     margin: 1em auto;
-    background-color: #00A19A;
+    background-color: #5AC4BE;
     padding: 0.5em;
-    max-width: 220px; }
+    font-size: 27px; }
   .home .row.studio p {
     max-width: 800px;
     margin: 1em auto;
@@ -2741,7 +2740,7 @@ HOME
       padding: .3em;
       left: .2em;
       text-align: left;
-      background-color: #00A19A; }
+      background-color: #5AC4BE; }
       @media (max-width: 768px) {
         .home .row.wedo .item.item-1 .titulo, .home .row.wedo .item.item-3 .titulo {
           font-size: 1em;
@@ -2769,7 +2768,7 @@ HOME
       padding: .3em;
       right: .2em;
       text-align: left;
-      background-color: #E71D73; }
+      background-color: #EE2A7B; }
       @media (max-width: 768px) {
         .home .row.wedo .item.item-2 .titulo, .home .row.wedo .item.item-4 .titulo {
           font-size: 1em;
@@ -2779,21 +2778,22 @@ HOME
           right: inherit;
           text-align: center; } }
 
-.home .testimonios h3 {
-  text-align: center;
-  background-color: #E71D73;
-  font-size: 2.3em;
-  max-width: 260px;
-  margin: 2em auto;
-  padding: .3em; }
-
-.home .testimonios ul {
-  padding: 0;
-  width: 100%;
+.home .testimonios {
   text-align: center; }
-  .home .testimonios ul li {
+  .home .testimonios h3 {
+    text-align: center;
+    background-color: #EE2A7B;
+    font-size: 27px;
     display: inline-block;
-    margin: 1em 2em 3em; }
+    margin: 2em auto;
+    padding: .3em; }
+  .home .testimonios ul {
+    padding: 0;
+    width: 100%;
+    text-align: center; }
+    .home .testimonios ul li {
+      display: inline-block;
+      margin: 1em 2em 3em; }
 
 .home .lang-es .row.slider .txt-slider {
   width: 82%; }
@@ -2823,25 +2823,30 @@ About
   text-align: center; }
   .page-template-about-tpl .content {
     background-color: #F7F7F8;
-    padding: 3em 0;
     line-height: 1.6; }
-    .page-template-about-tpl .content header h2, .page-template-about-tpl .content header h3 {
-      display: block;
-      color: white;
-      background-color: black;
-      text-align: center;
-      margin: 1em auto;
-      font-size: 2.5em;
-      padding: .3em;
-      max-width: 230px; }
-    .page-template-about-tpl .content header p {
-      max-width: 800px;
-      margin: 1em auto;
-      font-size: 1.4em; }
-      @media (max-width: 768px) {
-        .page-template-about-tpl .content header p {
-          font-size: 1em;
-          padding: 0 15%; } }
+    .page-template-about-tpl .content .container {
+      width: 100%; }
+      .page-template-about-tpl .content .container header {
+        background-color: white;
+        padding: 3em 0 4em; }
+        .page-template-about-tpl .content .container header h2, .page-template-about-tpl .content .container header h3 {
+          display: inline-block;
+          color: white;
+          background-color: black;
+          color: white;
+          text-align: center;
+          margin: 0;
+          padding: .5em;
+          font-size: 27px;
+          padding: 0.3em; }
+      .page-template-about-tpl .content .container p {
+        max-width: 800px;
+        margin: 1em auto;
+        font-size: 1.4em; }
+        @media (max-width: 768px) {
+          .page-template-about-tpl .content .container p {
+            font-size: 1em;
+            padding: 0 15%; } }
   .page-template-about-tpl .lang-es .content header h2, .page-template-about-tpl .lang-es .content header h3 {
     font-size: 1.3em;
     margin-top: 2em; }
@@ -3015,7 +3020,7 @@ About
     max-width: 960px; }
   .page-template-wedo .list-bs-items header h2 {
     text-align: center;
-    background-color: #00A19A;
+    background-color: #5AC4BE;
     font-size: 2em;
     max-width: 260px;
     margin: 2em auto;
@@ -3092,7 +3097,7 @@ About
   .page-template-wedo .methodology p {
     font-size: 1.6em;
     color: #231F20;
-    max-width: 305px; }
+    max-width: 555px; }
   .page-template-wedo .methodology ul {
     padding: 0; }
     .page-template-wedo .methodology ul li {
@@ -3107,8 +3112,9 @@ About
       margin: 0 -2px;
       padding: 1em 0 0 2em;
       font-weight: bolder;
-      font-size: 1.3em;
-      min-height: 69px; }
+      font-size: 1.2em;
+      min-height: 69px;
+      letter-spacing: 0; }
       .page-template-wedo .methodology ul li::after {
         content: "";
         display: block;
@@ -3138,7 +3144,7 @@ About
   background-repeat: no-repeat; }
   .page-template-wedo .faqs header h3 {
     text-align: center;
-    background-color: #E71D73;
+    background-color: #EE2A7B;
     font-size: 3em;
     max-width: 260px;
     margin: 2em auto;
@@ -3268,16 +3274,16 @@ Footer
       .site-footer .footer-nav ul li a {
         padding: .2em 1em;
         color: black;
-        font-size: 1.2em;
+        font-size: 11px;
         font-weight: bold;
         border-right: 1px solid; }
   .site-footer .terms {
     color: black;
-    font-size: 1.4em;
+    font-size: 11px;
     font-weight: bold;
     margin: 1em auto;
     display: inline-block; }
   .site-footer .site-sub-footer {
     max-width: 1024px;
     margin: 1em auto;
-    font-size: 1.2em; }
+    font-size: 10px; }

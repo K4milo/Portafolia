@@ -169,13 +169,12 @@ HOME
 			padding: 3em 0;
 			min-height: 600px;
 			h2{
-				font-family: $aileronltB;
-				display: block;
+				display: inline-block;
 				width: auto;
 				margin: 1em auto;
 				background-color: $blue;
 				padding: 0.5em;
-				max-width: 220px;
+				font-size: 27px;
 			}
 			p {
 				max-width: 800px;
@@ -336,11 +335,12 @@ HOME
 		}
 	}
 	.testimonios{
+		text-align: center;
 		h3{
 			text-align: center;
 			background-color: $purple;
-			font-size: 2.3em;
-			max-width: 260px;
+			font-size: 27px;
+			display: inline-block;
 			margin: 2em auto;
 			padding: .3em;
 		}

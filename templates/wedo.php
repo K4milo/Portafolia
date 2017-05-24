@@ -52,7 +52,7 @@ get_template_part('includes/header'); ?>
           echo '<p>Objetive-first Framework</p>';
         }
         if(ICL_LANGUAGE_CODE=='es'){
-          echo '<p>Nuestro Primer Objetivo</p>';
+          echo '<p>Marco operativo “objetive-first”</p>';
         }
       ?>
       

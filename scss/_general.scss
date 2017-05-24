@@ -1,6 +1,6 @@
 body,html {
 	font-family: $aileron;
-	letter-spacing: 0.14em;
+	letter-spacing: 2px;
 	color: $greyTxt;
 	//blog single
 	.blog-single{
@@ -22,7 +22,7 @@ body,html {
 			}
 		}
 
-		p{
+		p {
 			margin-bottom: 2em;
 		}
 	}
