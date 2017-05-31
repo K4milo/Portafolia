@@ -2360,6 +2360,10 @@ body, html {
   font-family: "Aileron";
   letter-spacing: 2px;
   color: #231F20; }
+  body div.wpcf7-validation-errors,
+  body div.wpcf7-mail-sent-ok, html div.wpcf7-validation-errors,
+  html div.wpcf7-mail-sent-ok {
+    border: none !important; }
   body div.wpcf7 .ajax-loader, html div.wpcf7 .ajax-loader {
     display: none; }
   body .blog-single, html .blog-single {

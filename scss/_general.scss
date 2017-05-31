@@ -2,7 +2,10 @@ body,html {
 	font-family: $aileron;
 	letter-spacing: 2px;
 	color: $greyTxt;
-
+	div.wpcf7-validation-errors,
+	div.wpcf7-mail-sent-ok {
+	border: none !important;
+	}
 	div.wpcf7 .ajax-loader{
 		display: none;
 	}
