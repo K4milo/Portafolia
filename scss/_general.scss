@@ -2,6 +2,10 @@ body,html {
 	font-family: $aileron;
 	letter-spacing: 2px;
 	color: $greyTxt;
+
+	div.wpcf7 .ajax-loader{
+		display: none;
+	}
 	//blog single
 	.blog-single{
 		max-width: 600px;

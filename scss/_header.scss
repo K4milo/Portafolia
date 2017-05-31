@@ -8,7 +8,8 @@ HEADER
 	right: -134px;
     transform: rotate(-90deg);
     @include mobile {
-    	right: -155px;
+    	right: -137px;
+    	font-size: 85%;
     }
 	li{
 		display: inline-block;
@@ -31,10 +32,11 @@ HEADER
 		position: absolute;
 		z-index: 20;
 		top: 50%;
-		left: -36px;
+		left: -27px;
 	    transform: rotate(-90deg);
 	    @include mobile {
-	    	left: -55px;
+	    	left: -27px;
+	    	font-size: 80%
 	    }
 		li{
 			display: inline-block;
@@ -43,6 +45,16 @@ HEADER
 				font-weight: bold;
 				padding: 0.5em 1em;
 				border-right: 1px solid;
+				text-transform: uppercase;
+				span{
+					vertical-align: middle;
+					overflow: hidden;
+					max-width: 31px;
+					display: block;
+					@include mobile {
+						max-width: 25px;
+					}
+				}
 			}
 			&:last-child{
 				a {

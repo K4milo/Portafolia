@@ -105,11 +105,24 @@ About
 //wthat swe say
 
 .page-template-wesay{
+	.top-img {
+		img {
+			@include mobile {
+				max-width: 90%;
+				display: block;
+				margin: 1em auto;
+			}
+		}
+	}
 	text-align: center;
 	.content {
 		background-color: $ltGrey;
 		padding: 3em 0;
 		line-height: 1.6;
+		@include mobile {
+			max-width: 82%;
+			margin: 0 auto;
+		}
 		header{ 
 			img{
 				 max-width: 100%;
@@ -276,6 +289,11 @@ About
 
 //what we do page
 .page-template-wedo {
+	.list-services{
+		@include mobile {
+			padding: 0 17%;
+		}
+	}
 	.list-bs-items {
 		margin-bottom: 2em;
 		.container {
@@ -308,6 +326,9 @@ About
 		.flip-container, .front, .back {
 			width: 100%;
 			height: 320px;
+			@include mobile {
+				height: 280px;
+			}
 		}
 
 		/* flip speed goes here */
@@ -361,7 +382,10 @@ About
 				h4{
 					font-weight: bold;
 					font-size: 2em;
-					padding: 1em 1em;
+					padding: 1em;
+					@include mobile {
+						font-size: 1.4em;
+					}
 				}
 			}
 			.back {
@@ -512,6 +536,7 @@ About
 	header{
 		text-align: center;
 		margin: 0 auto;
+		max-width: 550px;
 		h2,h3{
 			display: inline-block;
 			background-color: $black;
@@ -520,6 +545,9 @@ About
 			margin: 5px;
 			font-size: 2em;
 			padding: .4em;
+			@include mobile {
+				font-size: 1.4em;
+			}
 		}
 	}
 
@@ -532,7 +560,7 @@ About
 	form{
 		padding: 2em 0;
 		@include mobile {
-			padding: 1em 15%;
+			padding: 1em 6%;
 		}
 		br{
 			display: none;
@@ -547,6 +575,7 @@ About
 			padding: 2em;
 			@include mobile {
 				width: 100%;
+				padding: 1em;
 			}
 		}
 		textarea.form-control{

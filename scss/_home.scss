@@ -12,6 +12,11 @@ HOME
 			background-position: -75px 0;
 			background-repeat: no-repeat;
 			position: relative;
+			
+			@include mobile {
+				background-position: center -113px;
+				background-size: cover;
+			}
 
 			//menu slider
 			.slider-nav{
@@ -101,7 +106,7 @@ HOME
 					width: 90%;
 					max-width: 270px;
 					height: auto;
-					margin: 58% auto;
+					margin: 48% auto;
 					top: inherit;
 					right: inherit;
 				}
@@ -114,8 +119,12 @@ HOME
 					width: 100%;
 					padding: 0 7%;
 					@include mobile {
-						text-align: center;
-						font-size: 1.3em;
+						text-align: right;
+						font-size: 1.4em;
+						margin-bottom: 3px;
+						&:nth-child(3){
+							margin-top: -6px;
+						}
 					}
 					&:first-child {
 						strong{
@@ -375,8 +384,15 @@ HOME
 	padding: 1em 0;
 	text-align: center;
 	width: 100%;
+	@include mobile {
+		margin: 0;
+	}
 	h4{
 		font-weight: bold;
+		@include mobile {
+		    max-width: 300px;
+			margin: 0 auto;
+		}
 	}
 	form{
 		input {
@@ -386,12 +402,20 @@ HOME
 				float: none;
 				padding: 1em;
 				background-color: white;
+				@include mobile {
+					width: 100%;
+					display: block;
+					margin: 1em auto;
+				}
 			}
 			&.btn-primary {
 				background-color: $black;
 				display: inline-block;
 				margin: 1em;
 				float: none;
+			}
+			.ajax-loader {
+				display: none;
 			}
 		}
 	}

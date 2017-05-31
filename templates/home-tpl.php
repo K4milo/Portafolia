@@ -45,7 +45,7 @@ get_template_part('includes/header'); ?>
   </div><!-- /.row -->
 
 
-  <div class="row values">
+  <div class="row values wow fadeIn" data-wow-duration=".5s" data-wow-delay=".5s">
   	<header>
       <?php
         if(ICL_LANGUAGE_CODE=='en'){
@@ -101,7 +101,7 @@ get_template_part('includes/header'); ?>
     ?>
   </div><!-- /.row -->
 
-  <div class="row wedo">
+  <div class="row wedo wow fadeIn">
   	<div class="container clearfix">
   		<?php while(have_rows('que_hacemos')): the_row(); 
   				$counter = 1;
@@ -127,7 +127,7 @@ get_template_part('includes/header'); ?>
   	</div>
   </div><!-- /.row -->
 
-  <div class="row testimonios">
+  <div class="row testimonios wow fadeIn">
     <div class="container clearfix">
       <?php
         if(ICL_LANGUAGE_CODE=='en'){
@@ -156,7 +156,7 @@ get_template_part('includes/header'); ?>
 
 </div><!-- /.container -->
 
-<div class="row newsletter">
+<div class="row newsletter wow fadeIn">
   <div class="container">
     <?php
         if(ICL_LANGUAGE_CODE=='en'){
