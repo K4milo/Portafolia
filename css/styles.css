@@ -3066,12 +3066,7 @@ About
     padding: 0 17%; } }
 
 .page-template-wedo .list-bs-items {
-  margin-bottom: 2em;
-  /* flip the pane when hovered */
-  /* flip speed goes here */
-  /* hide back of pane during swap */
-  /* front pane, placed above back */
-  /* back, initially hidden pane */ }
+  margin-bottom: 2em; }
   .page-template-wedo .list-bs-items .container {
     max-width: 960px; }
   .page-template-wedo .list-bs-items header h2 {
@@ -3082,59 +3077,48 @@ About
     margin: 2em auto;
     text-transform: capitalize;
     padding: .3em; }
-  .page-template-wedo .list-bs-items .flip-container {
-    perspective: 1000px;
-    transform-style: preserve-3d; }
-  .page-template-wedo .list-bs-items .flip-container:hover .flipper, .page-template-wedo .list-bs-items .flip-container.hover .flipper {
-    transform: rotateY(180deg);
-    transform-style: preserve-3d; }
-  .page-template-wedo .list-bs-items .flip-container, .page-template-wedo .list-bs-items .front, .page-template-wedo .list-bs-items .back {
-    width: 100%;
-    height: 320px; }
-    @media (max-width: 768px) {
-      .page-template-wedo .list-bs-items .flip-container, .page-template-wedo .list-bs-items .front, .page-template-wedo .list-bs-items .back {
-        height: 280px; } }
-  .page-template-wedo .list-bs-items .flipper {
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    position: relative; }
-  .page-template-wedo .list-bs-items .front, .page-template-wedo .list-bs-items .back {
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .page-template-wedo .list-bs-items .front {
-    z-index: 2;
-    /* for firefox 31 */
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    -webkit-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d; }
-  .page-template-wedo .list-bs-items .back {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    -webkit-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d; }
   .page-template-wedo .list-bs-items .service-square {
     text-align: center; }
-    .page-template-wedo .list-bs-items .service-square .front img {
-      max-width: 100%;
-      margin: 5em auto 0; }
-    .page-template-wedo .list-bs-items .service-square .front h4 {
-      font-weight: bold;
-      font-size: 2em;
-      padding: 1em; }
+    .page-template-wedo .list-bs-items .service-square .flip-container {
+      width: 100%;
+      height: 320px;
+      position: relative; }
       @media (max-width: 768px) {
-        .page-template-wedo .list-bs-items .service-square .front h4 {
-          font-size: 1.4em; } }
+        .page-template-wedo .list-bs-items .service-square .flip-container {
+          height: 280px; } }
+      .page-template-wedo .list-bs-items .service-square .flip-container:hover .front {
+        opacity: 0; }
+      .page-template-wedo .list-bs-items .service-square .flip-container:hover .back {
+        opacity: 1; }
+    .page-template-wedo .list-bs-items .service-square .front {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s; }
+      .page-template-wedo .list-bs-items .service-square .front img {
+        max-width: 100%;
+        margin: 5em auto 0; }
+      .page-template-wedo .list-bs-items .service-square .front h4 {
+        font-weight: bold;
+        font-size: 2em;
+        padding: 1em; }
+        @media (max-width: 768px) {
+          .page-template-wedo .list-bs-items .service-square .front h4 {
+            font-size: 1.4em; } }
     .page-template-wedo .list-bs-items .service-square .back {
+      position: absolute;
       font-size: 1.3em;
       padding: 2.5em 1em;
-      margin-top: 2em; }
+      margin-top: 2em;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 0.5s; }
     .page-template-wedo .list-bs-items .service-square:nth-child(odd) {
       background-color: #F2F2F2; }
 
