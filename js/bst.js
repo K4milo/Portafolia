@@ -21,12 +21,16 @@
 		});
 
 		//read more
-		$('.toggleBtn').click(function(event) {
-			/* Act on the event */
-			event.preventDefault();
-			$('.long-text').toggle(400);
-			$(this).fadeOut(500);
+
+		$('.row').each(function(index, el) {
+			$(this).find('.toggleBtn').click(function(event) {
+				/* Act on the event */
+				event.preventDefault();
+				$('.long-text').toggle(400);
+				$(this).fadeOut(500);
+			});
 		});
+		
 
 		$('.page-template-wesay .content header h2').click(function(event) {
 			$('.page-template-wesay .content p').fadeIn(300);

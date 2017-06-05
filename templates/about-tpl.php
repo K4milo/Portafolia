@@ -65,8 +65,47 @@ get_template_part('includes/header'); ?>
     </div>
   </div><!-- /.row -->
 
+  <?php
+        // Query for additional profile items
+    if(have_rows('items_perfil')):
+      while(have_rows('items_perfil')):the_row();
+       ?>
+        <div class="row profile">
+          <div class="container">
+            <figure>
+              <img src="<?php the_sub_field('avatar'); ?>">
+            </figure>
+
+            <div class="short-text">
+              <?php the_field('texto_resumen'); ?>
+              <?php
+              if(ICL_LANGUAGE_CODE=='en'){
+                ?>
+                <a href="#" class="blackBtn toggleBtn wow fadeIn">Read More <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+            <?php
+              }
+              if(ICL_LANGUAGE_CODE=='es'){
+               ?>
+               <a href="#" class="blackBtn toggleBtn wow fadeIn">Ver Más <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+               <?php 
+              }
+            ?>
+            </div>
+            <div class="long-text">
+              <?php the_field('texto_detalle'); ?>
+            </div>
+
+        </div>
+      </div><!-- /.row -->
+    <?php 
+      endwhile;
+    endif;
+    ?>
+
 </div><!-- /.container -->
 
 <?php endwhile; ?>
+
+
 
 <?php get_template_part('includes/footer'); ?>

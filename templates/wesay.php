@@ -10,7 +10,7 @@ get_template_part('includes/header'); ?>
 <div class="container-fluid">
 
   <header class="top-img">
-      <img src="<?php echo the_field('imagen__superior') ?>" alt="portaShit"/>
+      <img src="<?php echo the_field('imagen__superior') ?>" alt="portafolia"/>
   </header>
 
   <div class="row content">
@@ -38,7 +38,7 @@ get_template_part('includes/header'); ?>
         <div class="col-md-6">
             <article class="last-posts" id="post_<?php the_ID()?>">
               <header>
-                <img src="<?php bloginfo('template_url');?>/img/logo-blog.png" alt="portafuck">
+                <img src="<?php bloginfo('template_url');?>/img/logo-blog.png" alt="portafolia">
                 <div class="date"><?php the_time('F j, Y'); ?></div>
               </header>
               <figure class="thumbs">
