@@ -3086,10 +3086,11 @@ About
       @media (max-width: 768px) {
         .page-template-wedo .list-bs-items .service-square .flip-container {
           height: 280px; } }
-      .page-template-wedo .list-bs-items .service-square .flip-container:hover .front {
-        opacity: 0; }
-      .page-template-wedo .list-bs-items .service-square .flip-container:hover .back {
-        opacity: 1; }
+      @media (min-width: 1024px) {
+        .page-template-wedo .list-bs-items .service-square .flip-container:hover .front {
+          opacity: 0; }
+        .page-template-wedo .list-bs-items .service-square .flip-container:hover .back {
+          opacity: 1; } }
     .page-template-wedo .list-bs-items .service-square .front {
       position: absolute;
       width: 100%;
@@ -3121,6 +3122,10 @@ About
       transition: all 0.5s; }
     .page-template-wedo .list-bs-items .service-square:nth-child(odd) {
       background-color: #F2F2F2; }
+    .page-template-wedo .list-bs-items .service-square.show-back .front {
+      opacity: 0; }
+    .page-template-wedo .list-bs-items .service-square.show-back .back {
+      opacity: 1; }
 
 .page-template-wedo .methodology {
   min-height: 430px;
