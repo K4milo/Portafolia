@@ -30,6 +30,12 @@
 				$(this).fadeOut(500);
 			});
 		});
+
+		if ($(window).width() < 767) {
+			$('.service-square').click(function(event) {
+				$(this).toggleClass('show-back');
+			});
+		}
 		
 
 		$('.page-template-wesay .content header h2').click(function(event) {

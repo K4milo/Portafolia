@@ -367,6 +367,15 @@ About
 			&:nth-child(odd) { 
 				background-color: $grey-3;
 			}
+
+			&.show-back {
+				.front{
+					opacity: 0;
+				}
+				.back{
+					opacity: 1;
+				}
+			}
 		}
 	}
 

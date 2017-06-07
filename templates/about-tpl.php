@@ -77,22 +77,7 @@ get_template_part('includes/header'); ?>
             </figure>
 
             <div class="short-text">
-              <?php the_field('texto_resumen'); ?>
-              <?php
-              if(ICL_LANGUAGE_CODE=='en'){
-                ?>
-                <a href="#" class="blackBtn toggleBtn wow fadeIn">Read More <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
-            <?php
-              }
-              if(ICL_LANGUAGE_CODE=='es'){
-               ?>
-               <a href="#" class="blackBtn toggleBtn wow fadeIn">Ver Más <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
-               <?php 
-              }
-            ?>
-            </div>
-            <div class="long-text">
-              <?php the_field('texto_detalle'); ?>
+              <?php the_sub_field('texto_resumen'); ?>
             </div>
 
         </div>
